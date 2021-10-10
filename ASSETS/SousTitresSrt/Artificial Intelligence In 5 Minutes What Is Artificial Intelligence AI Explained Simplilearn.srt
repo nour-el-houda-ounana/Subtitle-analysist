@@ -1,0 +1,459 @@
+1
+00:00:00,000 --> 00:00:05,009
+picture this a machine that could
+
+2
+00:00:02,550 --> 00:00:07,290
+organize your cupboard just as you like
+
+3
+00:00:05,009 --> 00:00:10,019
+it or serve every member of the house a
+
+4
+00:00:07,290 --> 00:00:12,750
+customized cup of coffee makes your day
+
+5
+00:00:10,019 --> 00:00:15,929
+easier doesn't it these are the products
+
+6
+00:00:12,750 --> 00:00:18,000
+of artificial intelligence but why use
+
+7
+00:00:15,929 --> 00:00:20,220
+the term artificial intelligence
+
+8
+00:00:18,000 --> 00:00:21,570
+well these machines are artificially
+
+9
+00:00:20,220 --> 00:00:24,359
+incorporated with human-like
+
+10
+00:00:21,570 --> 00:00:27,480
+intelligence to perform tasks as we do
+
+11
+00:00:24,359 --> 00:00:29,939
+this intelligence is built using complex
+
+12
+00:00:27,480 --> 00:00:33,540
+algorithms and mathematical functions
+
+13
+00:00:29,939 --> 00:00:36,809
+but AI may not be as obvious as in the
+
+14
+00:00:33,540 --> 00:00:39,270
+previous examples in fact AI is used in
+
+15
+00:00:36,809 --> 00:00:42,360
+smartphones cars social media feeds
+
+16
+00:00:39,270 --> 00:00:45,629
+video games banking surveillance and
+
+17
+00:00:42,360 --> 00:00:48,899
+many other aspects of our daily life the
+
+18
+00:00:45,629 --> 00:00:51,510
+real question is what does an AI do at
+
+19
+00:00:48,899 --> 00:00:54,210
+its core here is a robot we built in our
+
+20
+00:00:51,510 --> 00:00:56,190
+lab which is now dropped onto a field in
+
+21
+00:00:54,210 --> 00:00:58,620
+spite of a variation in lighting
+
+22
+00:00:56,190 --> 00:01:02,010
+landscape and dimensions of the field
+
+23
+00:00:58,620 --> 00:01:04,710
+the AI robot must perform as expected
+
+24
+00:01:02,010 --> 00:01:07,320
+this ability to react appropriately to a
+
+25
+00:01:04,710 --> 00:01:10,409
+new situation is called generalized
+
+26
+00:01:07,320 --> 00:01:14,130
+learning the robot is now at a crossroad
+
+27
+00:01:10,409 --> 00:01:16,320
+one that is paved in the other rocky the
+
+28
+00:01:14,130 --> 00:01:19,439
+robot must determine which path to take
+
+29
+00:01:16,320 --> 00:01:22,110
+based on the circumstances this portrays
+
+30
+00:01:19,439 --> 00:01:24,840
+the robots reasoning ability after a
+
+31
+00:01:22,110 --> 00:01:27,720
+short stroll the robot now encounters a
+
+32
+00:01:24,840 --> 00:01:30,720
+stream that it cannot swim across using
+
+33
+00:01:27,720 --> 00:01:33,630
+the plank provided as an input the robot
+
+34
+00:01:30,720 --> 00:01:36,630
+is able to cross this stream so our
+
+35
+00:01:33,630 --> 00:01:39,509
+robot uses the given input and finds the
+
+36
+00:01:36,630 --> 00:01:42,210
+solution for a problem this is problem
+
+37
+00:01:39,509 --> 00:01:44,640
+solving these three capabilities make
+
+38
+00:01:42,210 --> 00:01:47,549
+the robot artificially intelligent in
+
+39
+00:01:44,640 --> 00:01:51,210
+short AI provides machines with the
+
+40
+00:01:47,549 --> 00:01:54,750
+capability to adapt reason and provide
+
+41
+00:01:51,210 --> 00:01:57,149
+solutions well now that we know what a
+
+42
+00:01:54,750 --> 00:02:00,570
+is let's have a look at the two broad
+
+43
+00:01:57,149 --> 00:02:04,500
+categories in AI is classified into weak
+
+44
+00:02:00,570 --> 00:02:08,310
+AI also called narrow AI focuses solely
+
+45
+00:02:04,500 --> 00:02:11,220
+on one task for example alphago is a
+
+46
+00:02:08,310 --> 00:02:13,720
+maestro of the game go but you can't
+
+47
+00:02:11,220 --> 00:02:18,170
+expect it to be even remotely good at
+
+48
+00:02:13,720 --> 00:02:20,900
+this makes alphago a weak AI you might
+
+49
+00:02:18,170 --> 00:02:24,500
+say Alexa is definitely not a weak AI
+
+50
+00:02:20,900 --> 00:02:27,080
+since it can perform multiple tasks well
+
+51
+00:02:24,500 --> 00:02:29,959
+that's not really true when you ask
+
+52
+00:02:27,080 --> 00:02:33,040
+Alexa to play this besito it picks up
+
+53
+00:02:29,959 --> 00:02:36,709
+the key words play and dispose IDO and
+
+54
+00:02:33,040 --> 00:02:38,990
+runs a program and is trained - Alexa
+
+55
+00:02:36,709 --> 00:02:41,570
+cannot respond to a question it isn't
+
+56
+00:02:38,990 --> 00:02:44,300
+trained to answer for instance try
+
+57
+00:02:41,570 --> 00:02:45,230
+asking Alexa the status of traffic from
+
+58
+00:02:44,300 --> 00:02:47,390
+work to home
+
+59
+00:02:45,230 --> 00:02:50,080
+Alexa cannot provide you this
+
+60
+00:02:47,390 --> 00:02:53,000
+information as she is not trained - and
+
+61
+00:02:50,080 --> 00:02:57,650
+that brings us to our second category of
+
+62
+00:02:53,000 --> 00:02:59,930
+AI strong AI now this is much like the
+
+63
+00:02:57,650 --> 00:03:00,350
+robots that only exist in fiction as of
+
+64
+00:02:59,930 --> 00:03:03,590
+now
+
+65
+00:03:00,350 --> 00:03:06,680
+Ultron from Avengers is an ideal example
+
+66
+00:03:03,590 --> 00:03:09,200
+of a strong AI that's because it's
+
+67
+00:03:06,680 --> 00:03:09,920
+self-aware and eventually even develops
+
+68
+00:03:09,200 --> 00:03:12,610
+emotions
+
+69
+00:03:09,920 --> 00:03:16,010
+this makes the a eyes response
+
+70
+00:03:12,610 --> 00:03:18,799
+unpredictable you must be wondering well
+
+71
+00:03:16,010 --> 00:03:20,810
+how is artificial intelligence different
+
+72
+00:03:18,799 --> 00:03:24,380
+from machine learning and deep learning
+
+73
+00:03:20,810 --> 00:03:27,350
+we saw what a is machine learning is a
+
+74
+00:03:24,380 --> 00:03:30,140
+technique to achieve AI and deep
+
+75
+00:03:27,350 --> 00:03:32,540
+learning in turn is a subset of machine
+
+76
+00:03:30,140 --> 00:03:34,370
+learning machine learning provides a
+
+77
+00:03:32,540 --> 00:03:36,410
+machine with the capability to learn
+
+78
+00:03:34,370 --> 00:03:39,170
+from data and experience throughout
+
+79
+00:03:36,410 --> 00:03:41,600
+rhythms deep learning does this learning
+
+80
+00:03:39,170 --> 00:03:44,120
+through ways inspired by the human brain
+
+81
+00:03:41,600 --> 00:03:47,030
+this means through deep learning data
+
+82
+00:03:44,120 --> 00:03:49,400
+and patterns can be better perceived Ray
+
+83
+00:03:47,030 --> 00:03:52,220
+Kurzweil a well known futurist
+
+84
+00:03:49,400 --> 00:03:55,459
+predicts that by the Year 2045 we would
+
+85
+00:03:52,220 --> 00:03:57,620
+have robots as smart as humans this is
+
+86
+00:03:55,459 --> 00:04:01,280
+called the point of singularity well
+
+87
+00:03:57,620 --> 00:04:03,350
+that's not all in fact Elon Musk
+
+88
+00:04:01,280 --> 00:04:06,530
+predicts that the human mind and body
+
+89
+00:04:03,350 --> 00:04:10,280
+will be enhanced by AI implants which
+
+90
+00:04:06,530 --> 00:04:12,829
+would make us partly cyborgs so here's a
+
+91
+00:04:10,280 --> 00:04:17,030
+question for you which of the below AI
+
+92
+00:04:12,829 --> 00:04:20,030
+projects don't exist yet a an AI robot
+
+93
+00:04:17,030 --> 00:04:23,539
+with citizenship be a robot with a
+
+94
+00:04:20,030 --> 00:04:25,760
+muscular skeletal system see a AI that
+
+95
+00:04:23,539 --> 00:04:28,820
+can read its owner's emotions
+
+96
+00:04:25,760 --> 00:04:31,280
+the AI that develops emotions over time
+
+97
+00:04:28,820 --> 00:04:33,500
+give it a thought and leave your answers
+
+98
+00:04:31,280 --> 00:04:35,630
+in the comments section below three
+
+99
+00:04:33,500 --> 00:04:38,630
+lucky winners will receive Amazon gift
+
+100
+00:04:35,630 --> 00:04:41,840
+vouchers since the human brain is still
+
+101
+00:04:38,630 --> 00:04:45,050
+a mystery it's no surprise that AI 2 has
+
+102
+00:04:41,840 --> 00:04:47,660
+a lot of unvented domains for now
+
+103
+00:04:45,050 --> 00:04:50,840
+AI is built to work with humans and make
+
+104
+00:04:47,660 --> 00:04:53,360
+our tasks easier however with the
+
+105
+00:04:50,840 --> 00:04:55,850
+maturation of technology we can only
+
+106
+00:04:53,360 --> 00:04:57,230
+wait and watch what the future of AI
+
+107
+00:04:55,850 --> 00:05:00,290
+holds for us
+
+108
+00:04:57,230 --> 00:05:02,420
+well that is artificial intelligence for
+
+109
+00:05:00,290 --> 00:05:03,950
+you in short do not forget to leave your
+
+110
+00:05:02,420 --> 00:05:06,560
+answer to the quiz in the comment
+
+111
+00:05:03,950 --> 00:05:08,360
+section below also like share and
+
+112
+00:05:06,560 --> 00:05:13,300
+subscribe to our channel if you enjoyed
+
+113
+00:05:08,360 --> 00:05:13,300
+this video stay tuned and keep learning
+
+114
+00:05:14,970 --> 00:05:18,029
+[Music]
+
+115
+00:05:20,969 --> 00:05:23,029
+you

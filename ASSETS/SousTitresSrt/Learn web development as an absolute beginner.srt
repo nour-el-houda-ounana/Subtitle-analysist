@@ -1,0 +1,669 @@
+1
+00:00:00,000 --> 00:00:08,090
+If you want to learn web development, where 
+do you even start? It's hard to find the right  
+
+2
+00:00:08,090 --> 00:00:13,910
+advice without suffering from information overload.
+That's why I've created this beginner's roadmap!  
+
+3
+00:00:13,910 --> 00:00:19,220
+it lays out all the basics you need to learn 
+web development we're going to go through each  
+
+4
+00:00:19,220 --> 00:00:23,360
+step so by the end of this guide you'll have an 
+understanding of the basics of web development and  
+
+5
+00:00:23,360 --> 00:00:32,570
+what skills you need to learn I recommend doing 
+steps 1 2 & 3 in order then depending on whether  
+
+6
+00:00:32,570 --> 00:00:39,290
+you want to focus on more front-end or back-end 
+you can do steps 4A or 4B. I personally think  
+
+7
+00:00:39,290 --> 00:00:43,070
+it's a good idea for front-end web developers to 
+learn at least a little bit of back-end and vice  
+
+8
+00:00:43,070 --> 00:00:46,910
+versa knowing the basics of both will help 
+you know if you like front-end or back-end  
+
+9
+00:00:46,910 --> 00:00:54,890
+web development better sound good let's dig deeper 
+into the roadmap before you get into actual coding  
+
+10
+00:00:54,890 --> 00:01:00,080
+you'll need to understand some general concepts 
+as you start your journey into web development how  
+
+11
+00:01:00,080 --> 00:01:07,700
+websites work the difference between front-end and 
+back-end and using a code editor all websites at  
+
+12
+00:01:07,700 --> 00:01:12,440
+the most basic are just a bunch of files that are 
+stored on a computer called a server this server  
+
+13
+00:01:12,440 --> 00:01:17,450
+is connected to the Internet you can then load 
+that website through a browser like Chrome Firefox  
+
+14
+00:01:17,450 --> 00:01:23,000
+or Safari on your computer or on your phone 
+your browser is also called the client in this  
+
+15
+00:01:23,000 --> 00:01:29,390
+situation so every time you're on the Internet 
+you the client are loading data from the server  
+
+16
+00:01:29,390 --> 00:01:34,310
+as well as submitting data back to the server this 
+back and forth between the client and the server  
+
+17
+00:01:34,310 --> 00:01:41,990
+is the basis of the internet web developer roles 
+typically fall into three categories front end  
+
+18
+00:01:41,990 --> 00:01:48,890
+back end and full stack the terms front end back 
+end and full stack web developer describe what  
+
+19
+00:01:48,890 --> 00:01:53,590
+part of the client-server relationship that you're 
+working with fernand means that you're dealing  
+
+20
+00:01:53,590 --> 00:01:57,880
+mainly with the client-side it's called the front 
+end because it's what you can see in the browser  
+
+21
+00:01:57,880 --> 00:02:03,370
+conversely the back end is the part of the website 
+that you can't really see but it handles a lot of  
+
+22
+00:02:03,370 --> 00:02:09,040
+the logic and functionality that is necessary for 
+everything to work one way you can think about  
+
+23
+00:02:09,040 --> 00:02:13,420
+this is that front-end web development is like 
+the front-of-house part of a restaurant it's a  
+
+24
+00:02:13,420 --> 00:02:18,730
+section where customers come to see and experience 
+the restaurant the interior decor seating and of  
+
+25
+00:02:18,730 --> 00:02:23,920
+course eating the food on the other hand back-end 
+web development is like the back of house part of  
+
+26
+00:02:23,920 --> 00:02:28,900
+the restaurant it's where deliveries and inventory 
+are managed and the process to create the food all  
+
+27
+00:02:28,900 --> 00:02:33,220
+happens there's a lot of things behind the scenes 
+that the customers won't see they will experience  
+
+28
+00:02:33,220 --> 00:02:39,520
+and hopefully enjoy the end product a delicious 
+meal fun illustrations aside both front-end and  
+
+29
+00:02:39,520 --> 00:02:45,490
+back-end web development serve different but very 
+important functions when you build a website the  
+
+30
+00:02:45,490 --> 00:02:50,980
+most essential tool that you'll use is your code 
+editor or IDE integrated development environment  
+
+31
+00:02:50,980 --> 00:02:56,080
+this tool allows you to write the markup and code 
+that will make up the website there are quite a  
+
+32
+00:02:56,080 --> 00:03:02,170
+few good options out there but currently the most 
+popular code editor is vs code vs code is a more  
+
+33
+00:03:02,170 --> 00:03:08,830
+lightweight version of Visual Studio Microsoft's 
+main IDE it's fast free easy to use and you can  
+
+34
+00:03:08,830 --> 00:03:14,800
+customize it with themes and extensions other 
+code editors are sublime text Adam and vim if  
+
+35
+00:03:14,800 --> 00:03:19,120
+you're just getting started though I'd recommend 
+checking out vs code which you can download from  
+
+36
+00:03:19,120 --> 00:03:24,310
+their website now that we've covered some of the 
+broader concepts of what web development is let's  
+
+37
+00:03:24,310 --> 00:03:29,980
+get into more of the details starting with the 
+front end the front end of a website is made up  
+
+38
+00:03:29,980 --> 00:03:38,470
+of three types of files HTML CSS and JavaScript 
+these files are what is loaded in the browser on  
+
+39
+00:03:38,470 --> 00:03:45,010
+a client-side HTML or hypertext markup language 
+is the foundation of all websites it's the main  
+
+40
+00:03:45,010 --> 00:03:50,290
+file type that is loaded in your browser when you 
+look at a web site the HTML file contains all the  
+
+41
+00:03:50,290 --> 00:03:56,200
+content on the page and it uses tags to denote 
+different types of content for example you can use  
+
+42
+00:03:56,200 --> 00:04:07,890
+tags to create headline titles paragraphs bulleted 
+lists images and so on HTML tags by themselves do  
+
+43
+00:04:07,890 --> 00:04:12,030
+have some Styles attached but they're pretty basic 
+kind of like what you would see in a Word document  
+
+44
+00:04:12,030 --> 00:04:19,980
+CSS or cascading style sheets lets you style that 
+HTML content so it looks nice and fancy you can  
+
+45
+00:04:19,980 --> 00:04:26,100
+add colors custom fonts and lay out the elements 
+of your website however you want them to look  
+
+46
+00:04:26,100 --> 00:04:33,180
+you can even create animations and shapes with 
+CSS there's a lot of depth to CSS and sometimes  
+
+47
+00:04:33,180 --> 00:04:38,340
+people tend to gloss over it so they can move 
+on to things like JavaScript however it's really  
+
+48
+00:04:38,340 --> 00:04:45,480
+important to be able to convert a design into 
+a front-end website layout using CSS javascript  
+
+49
+00:04:45,480 --> 00:04:49,950
+is a programming language that was designed to 
+run in the browser using JavaScript you can make  
+
+50
+00:04:49,950 --> 00:04:55,710
+your website respond to different inputs from the 
+user or other sources for example you can build a  
+
+51
+00:04:55,710 --> 00:05:00,120
+back to top button that when the user clicks it 
+they'll scroll back up to the top of the page  
+
+52
+00:05:00,120 --> 00:05:07,530
+as we mentioned HTML CSS and JavaScript are the 
+basic building blocks of front-end web development  
+
+53
+00:05:07,530 --> 00:05:13,950
+in addition to them there are a few other tools 
+that you'll want to learn at this point package  
+
+54
+00:05:13,950 --> 00:05:18,990
+managers are online collections of software much 
+of it open source each piece of software called  
+
+55
+00:05:18,990 --> 00:05:24,030
+a package is available for you to install and 
+use in your own projects you can think about  
+
+56
+00:05:24,030 --> 00:05:28,530
+them like plugins instead of writing everything 
+from scratch you can use helpful utilities that  
+
+57
+00:05:28,530 --> 00:05:33,270
+other people have written already for instance 
+you can simply use a slider plug-in instead of  
+
+58
+00:05:33,270 --> 00:05:38,400
+having to code it all yourself which could take 
+days to figure out why reinvent the wheel if you  
+
+59
+00:05:38,400 --> 00:05:45,150
+don't have to the most popular package manager is 
+called NPM or node package manager you can also  
+
+60
+00:05:45,150 --> 00:05:49,830
+use another manager called yarn both are good 
+options to know and use although it's probably  
+
+61
+00:05:49,830 --> 00:05:55,500
+best to start out with NPM in addition to package 
+manager is you'll want to become familiar with  
+
+62
+00:05:55,500 --> 00:06:01,230
+build tools module bundlers and build tools are 
+another essential part of the front-end workflow  
+
+63
+00:06:01,230 --> 00:06:08,040
+on a basic level these tools run tasks and process 
+files you can use them to compile your sass files  
+
+64
+00:06:08,040 --> 00:06:14,430
+to CSS transpile your es6 javascript files down 
+the es5 for better browser support run a local  
+
+65
+00:06:14,430 --> 00:06:19,110
+web server and many other helpful tasks saving 
+you a ton of hassle if you were to try to do all  
+
+66
+00:06:19,110 --> 00:06:24,000
+these essential steps by yourself three tools 
+that you'll continue to come across a lot are  
+
+67
+00:06:24,000 --> 00:06:30,450
+gulp web pack and parcel personally I like using 
+gulp for my own front-end workflows where I just  
+
+68
+00:06:30,450 --> 00:06:36,300
+want to compile my sass and JavaScript files and 
+not do too much else the last tool you'll need  
+
+69
+00:06:36,300 --> 00:06:42,120
+to learn about in this stage is version control 
+version control also called source control is  
+
+70
+00:06:42,120 --> 00:06:46,020
+a system that keeps track of every code change 
+that you make in your project files you can even  
+
+71
+00:06:46,020 --> 00:06:50,610
+revert to a previous chain if you make a mistake 
+it's almost like having infinite save points for  
+
+72
+00:06:50,610 --> 00:06:56,580
+your projects and let me tell you it can be a huge 
+lifesaver the most popular version control system  
+
+73
+00:06:56,580 --> 00:07:01,770
+is an open source system called git using git you 
+can store all your files and then change history  
+
+74
+00:07:01,770 --> 00:07:07,680
+in collections called repositories you may also 
+have heard of github which is an online hosting  
+
+75
+00:07:07,680 --> 00:07:14,820
+company owned by Microsoft where you can store 
+all your git repositories at this point you've  
+
+76
+00:07:14,820 --> 00:07:18,390
+learned the basics of friend development and 
+have a choice to either delve into additional  
+
+77
+00:07:18,390 --> 00:07:23,520
+friends skills or learn about basic backend web 
+development with additional front-end there are  
+
+78
+00:07:23,520 --> 00:07:27,570
+some more intermediate skills that you will 
+want to learn I recommend that you look at the  
+
+79
+00:07:27,570 --> 00:07:34,620
+following SAS responsive design and a JavaScript 
+framework SAS is an extension of CSS that makes  
+
+80
+00:07:34,620 --> 00:07:40,740
+writing styles more intuitive and modular it's 
+a really powerful tool with sass you can split  
+
+81
+00:07:40,740 --> 00:07:45,630
+up your styles into multiple files for better 
+organization create variables to store colors and  
+
+82
+00:07:45,630 --> 00:07:51,750
+fonts and use mix-ins and placeholders to easily 
+reuse styles even if you utilize just some of  
+
+83
+00:07:51,750 --> 00:07:55,710
+the basic features like nesting you'll be able to 
+write your Styles quicker and with less headache  
+
+84
+00:07:57,180 --> 00:08:03,300
+responsive design ensures that your sales will 
+look good on all devices desktops tablets and  
+
+85
+00:08:03,300 --> 00:08:08,730
+mobile phones the core practices of responsive 
+design include using flexible sizing for elements  
+
+86
+00:08:08,730 --> 00:08:15,300
+as well as utilizing media queries to target 
+styles for specific devices and widths for example  
+
+87
+00:08:15,300 --> 00:08:20,880
+instead of setting your contents to be a static 
+400 pixels wide you can use a media query and set  
+
+88
+00:08:20,880 --> 00:08:28,020
+the content to be 50% width on desktop and 100% 
+on mobile building a website with responsive CSS  
+
+89
+00:08:28,020 --> 00:08:35,220
+is a must these days especially as mobile traffic 
+is outpacing desktop traffic in many cases once  
+
+90
+00:08:35,220 --> 00:08:39,960
+you have the basics of vanilla JavaScript down you 
+may want to learn one of the JavaScript frameworks  
+
+91
+00:08:39,960 --> 00:08:44,670
+especially if you want to be a full-stack 
+JavaScript developer these frameworks come with  
+
+92
+00:08:44,670 --> 00:08:48,720
+pre-built structures and components that allow 
+you to build apps quicker than if you started  
+
+93
+00:08:48,720 --> 00:08:56,310
+from scratch currently you have three main choices 
+react angular and view react which is technically  
+
+94
+00:08:56,310 --> 00:09:02,160
+a library was created by Facebook and is the most 
+popular framework right now angular was the first  
+
+95
+00:09:02,160 --> 00:09:06,840
+big framework and it was created by Google it's 
+still very popular even though it's been surpassed  
+
+96
+00:09:06,840 --> 00:09:13,140
+by react recently and views a newer framework 
+created by Evan you a former angular developer  
+
+97
+00:09:13,140 --> 00:09:18,480
+well it is smaller news and react and angular is 
+growing quickly and is also considered easy and  
+
+98
+00:09:18,480 --> 00:09:25,290
+fun to use you might be wondering now okay well 
+which framework is the best the truth is they are  
+
+99
+00:09:25,290 --> 00:09:30,870
+all good and web development there's almost never 
+a single choice that is 100% the best choice for  
+
+100
+00:09:30,870 --> 00:09:36,690
+every person in every situation your choice will 
+most likely be determined by your job or it simply  
+
+101
+00:09:36,690 --> 00:09:42,630
+by which one you enjoy using the most if your end 
+goal is to land a job at a company try researching  
+
+102
+00:09:42,630 --> 00:09:47,640
+which framework seems to be the most common in 
+potential job listings don't worry too much about  
+
+103
+00:09:47,640 --> 00:09:52,050
+which framework to choose it's more important that 
+you learn and understand the concepts behind them  
+
+104
+00:09:52,050 --> 00:09:57,570
+and once you learn one framework it'll be much 
+easier to learn other ones after that let's move  
+
+105
+00:09:57,570 --> 00:10:04,950
+on now to our last section backend web development 
+the backend or server side of web development is  
+
+106
+00:10:04,950 --> 00:10:09,960
+made up of three main components the server 
+a server-side programming language and the  
+
+107
+00:10:09,960 --> 00:10:14,610
+database as we mentioned at the very beginning 
+the server is the computer where all website  
+
+108
+00:10:14,610 --> 00:10:20,280
+files the database and other components are stored 
+traditional servers run on operating systems such  
+
+109
+00:10:20,280 --> 00:10:26,220
+as Linux or Windows they're considered centralized 
+because everything the website files back-end code  
+
+110
+00:10:26,220 --> 00:10:32,970
+and data are stored all together on the server 
+nowadays there are also serverless architectures  
+
+111
+00:10:32,970 --> 00:10:38,610
+which is a more decentralized type of setup this 
+type of application splits up those components and  
+
+112
+00:10:38,610 --> 00:10:43,470
+leverages third-party vendors to handle each 
+of them despite the name though you still do  
+
+113
+00:10:43,470 --> 00:10:48,060
+need some kind of webserver to at least store 
+your website files some examples of service  
+
+114
+00:10:48,060 --> 00:10:54,450
+providers are AWS Amazon Web Services or nullify 
+Cir furless set ups are popular because they are  
+
+115
+00:10:54,450 --> 00:10:58,860
+fast cheap and you don't need to worry about 
+server maintenance they're great for simple  
+
+116
+00:10:58,860 --> 00:11:04,200
+static websites that don't require a traditional 
+server-side language however for very complex  
+
+117
+00:11:04,200 --> 00:11:10,530
+applications the traditional server setup might 
+be a better option on the server you need to use  
+
+118
+00:11:10,530 --> 00:11:15,120
+a programming language to write the functions 
+and logic for your application the server then  
+
+119
+00:11:15,120 --> 00:11:20,520
+compiles your code and conveys the result back 
+to the client popular programming languages for  
+
+120
+00:11:20,520 --> 00:11:28,080
+the web include PHP Python Ruby c-sharp and Java 
+there is also a form of server-side JavaScript  
+
+121
+00:11:28,080 --> 00:11:34,320
+node.js which is a runtime environment that 
+can run JavaScript code on the server finally  
+
+122
+00:11:34,320 --> 00:11:39,870
+you'll need to learn about databases databases as 
+a name implies are where you store information on  
+
+123
+00:11:39,870 --> 00:11:46,290
+your server for your website most databases use a 
+language called SQL pronounced sequel which stands  
+
+124
+00:11:46,290 --> 00:11:51,990
+for structured query language in the database 
+data is stored in tables sort of like complex  
+
+125
+00:11:51,990 --> 00:11:59,550
+Excel documents then you can write queries in SQL 
+in order to create read update and delete data the  
+
+126
+00:11:59,550 --> 00:12:04,200
+database is run on the server meeting servers 
+like Microsoft sequel server on Windows servers  
+
+127
+00:12:04,200 --> 00:12:10,500
+and my sequel for Linux there are also no sequel 
+databases which store the data in JSON files as  
+
+128
+00:12:10,500 --> 00:12:16,480
+opposed to the traditional tables one type of no 
+sequel database is MongoDB which is often used  
+
+129
+00:12:16,480 --> 00:12:22,930
+with react angular and view applications some 
+examples of how data is utilized on websites  
+
+130
+00:12:22,930 --> 00:12:27,550
+are if you have a contact form on your website 
+you could build the form so that every time  
+
+131
+00:12:27,550 --> 00:12:33,070
+someone submits the form their data is saved on 
+to your database you can also store user logins  
+
+132
+00:12:33,070 --> 00:12:37,150
+on the database and write logic in the server-side 
+language to handle checking and authenticating the  
+
+133
+00:12:37,150 --> 00:12:44,710
+logins and that's how I would recommend you start 
+your journey into web development I've compiled  
+
+134
+00:12:44,710 --> 00:12:48,340
+a list of resources to help you get started 
+learning at any of these stages linked below

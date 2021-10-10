@@ -1,0 +1,343 @@
+1
+00:00:00,000 --> 00:00:04,200
+The Internet of Things or iot
+is influencing our lifestyle
+
+2
+00:00:04,200 --> 00:00:05,622
+from the way we react
+
+3
+00:00:05,622 --> 00:00:08,200
+to the way we behave.
+From air conditioners
+
+4
+00:00:08,200 --> 00:00:10,200
+that you can control
+with your smartphone
+
+5
+00:00:10,200 --> 00:00:12,910
+to Smart Cars providing
+the shortest route
+
+6
+00:00:12,910 --> 00:00:14,100
+or your Smartwatch
+
+7
+00:00:14,100 --> 00:00:16,600
+which is tracking
+your daily activities.
+
+8
+00:00:16,600 --> 00:00:18,325
+IoT is a giant network
+
+9
+00:00:18,325 --> 00:00:21,600
+with connected devices.
+These devices gather
+
+10
+00:00:21,600 --> 00:00:23,828
+and share data about
+how they are used
+
+11
+00:00:23,828 --> 00:00:26,600
+and the environment
+in which they are operated.
+
+12
+00:00:26,600 --> 00:00:30,100
+It's all done using sensors, 
+sensors are embedded
+
+13
+00:00:30,100 --> 00:00:31,846
+in every physical device.
+
+14
+00:00:31,846 --> 00:00:35,200
+It can be your mobile
+phone, electrical appliances
+
+15
+00:00:35,200 --> 00:00:37,100
+Pecos barcode sensors
+
+16
+00:00:37,100 --> 00:00:40,900
+traffic lights and almost
+everything that you come across
+
+17
+00:00:40,900 --> 00:00:44,800
+in day-to-day life. These sensors
+continuously emit data
+
+18
+00:00:44,800 --> 00:00:47,101
+about the working state
+of the devices,
+
+19
+00:00:47,101 --> 00:00:48,905
+but the important question is
+
+20
+00:00:48,905 --> 00:00:51,600
+how do they share
+this huge amount of data,
+
+21
+00:00:51,600 --> 00:00:53,400
+And how do we put this data
+
+22
+00:00:53,400 --> 00:00:56,700
+to our benefit iot
+provides a common platform
+
+23
+00:00:56,700 --> 00:00:59,700
+for all these devices
+to dump their data.
+
+24
+00:00:59,800 --> 00:01:00,849
+And a Common language
+
+25
+00:01:00,849 --> 00:01:04,656
+for all the devices to
+communicate with each other. Data
+
+26
+00:01:04,656 --> 00:01:06,854
+is emitted from various sensors
+
+27
+00:01:06,854 --> 00:01:07,917
+and sent to iot
+
+28
+00:01:07,917 --> 00:01:12,299
+platform security iot platform
+integrates the collected data
+
+29
+00:01:12,299 --> 00:01:13,300
+from various sources
+
+30
+00:01:13,300 --> 00:01:16,174
+further analytics is
+performed on the data
+
+31
+00:01:16,174 --> 00:01:20,200
+and valuable information
+is extracted as per requirement.
+
+32
+00:01:20,384 --> 00:01:21,000
+Finally.
+
+33
+00:01:21,000 --> 00:01:22,280
+The result is shared
+
+34
+00:01:22,280 --> 00:01:25,800
+with other devices for better
+user experience Automation
+
+35
+00:01:25,800 --> 00:01:27,500
+and improving efficiencies.
+
+36
+00:01:27,500 --> 00:01:31,500
+Let us look at a scenario
+where iot is doing wonders.
+
+37
+00:01:31,500 --> 00:01:36,121
+In an AC manufacturing industry
+both the manufacturing machine
+
+38
+00:01:36,121 --> 00:01:39,000
+and the Belt have
+sensors attached they
+
+39
+00:01:39,000 --> 00:01:42,077
+continuously send data
+regarding the machine health
+
+40
+00:01:42,077 --> 00:01:43,800
+and the production specifics
+
+41
+00:01:43,800 --> 00:01:47,311
+to the manufacturer
+to identify issues beforehand.
+
+42
+00:01:47,311 --> 00:01:48,806
+A barcode is attached
+
+43
+00:01:48,806 --> 00:01:51,500
+to each product
+before leaving the belt.
+
+44
+00:01:51,500 --> 00:01:54,853
+It contains the product
+code, manufacturer details,
+
+45
+00:01:54,853 --> 00:01:56,600
+special instructions Etc.
+
+46
+00:01:56,600 --> 00:01:59,700
+The manufacturer uses
+this data to identify
+
+47
+00:01:59,700 --> 00:02:00,700
+where the product
+
+48
+00:02:00,700 --> 00:02:04,100
+was distributed and track
+the Retailer's inventory hence,
+
+49
+00:02:04,100 --> 00:02:06,766
+the manufacturer can make
+the product running
+
+50
+00:02:06,766 --> 00:02:08,060
+out of stock available
+
+51
+00:02:08,060 --> 00:02:10,413
+Next this products
+are packed and parcel
+
+52
+00:02:10,413 --> 00:02:11,800
+to different retailers.
+
+53
+00:02:11,800 --> 00:02:13,300
+Each retailer has
+
+54
+00:02:13,300 --> 00:02:16,040
+a barcode reader to track
+the products coming
+
+55
+00:02:16,040 --> 00:02:19,183
+from different manufacturers,
+manage inventory, check
+
+56
+00:02:19,183 --> 00:02:20,391
+special instructions
+
+57
+00:02:20,391 --> 00:02:22,120
+and many more. The compressor
+
+58
+00:02:22,120 --> 00:02:24,676
+of air conditioner
+has an embedded sensor
+
+59
+00:02:24,676 --> 00:02:28,000
+that emits data regarding
+its health and temperature.
+
+60
+00:02:28,000 --> 00:02:31,000
+This data is not allies
+continuously allowing
+
+61
+00:02:31,000 --> 00:02:34,700
+the customer care to contact you
+for the repair work in time.
+
+62
+00:02:34,700 --> 00:02:37,100
+This is just one
+of the million scenarios.
+
+63
+00:02:37,100 --> 00:02:42,100
+We have Smart appliances, Smart
+Cars, Smart Homes, smart Cities
+
+64
+00:02:42,100 --> 00:02:46,000
+where iot is redefining
+our lifestyle and transforming
+
+65
+00:02:46,000 --> 00:02:48,400
+the way we interact
+with Technologies.
+
+66
+00:02:48,400 --> 00:02:50,900
+The future of iot industry is
+
+67
+00:02:50,900 --> 00:02:54,400
+huge. Business Insider
+intelligence estimates
+
+68
+00:02:54,400 --> 00:02:58,900
+that 24 billion iot devices
+will be installed by 2020
+
+69
+00:02:58,900 --> 00:03:00,300
+and ITC predicts
+
+70
+00:03:00,300 --> 00:03:03,800
+that iot Revenue will reach
+around three hundred
+
+71
+00:03:03,800 --> 00:03:05,600
+and fifty seven billion
+
+72
+00:03:05,600 --> 00:03:09,208
+in 2019 resulting in a lot
+of job opportunities
+
+73
+00:03:09,208 --> 00:03:12,600
+in the IT industry.
+Want to become a part
+
+74
+00:03:12,600 --> 00:03:16,800
+of the iot Revolution, come
+and master iot with Edureka.

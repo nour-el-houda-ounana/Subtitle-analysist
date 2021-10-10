@@ -1,0 +1,535 @@
+1
+00:00:00,000 --> 00:00:09,179
+[Music]
+
+2
+00:00:06,230 --> 00:00:11,010
+welcome to master kubernetes in this
+
+3
+00:00:09,179 --> 00:00:12,389
+course will explore kubernetes the
+
+4
+00:00:11,010 --> 00:00:14,219
+leading package in one of the most
+
+5
+00:00:12,389 --> 00:00:16,320
+exciting and lucrative areas of
+
+6
+00:00:14,219 --> 00:00:19,260
+computing technology today container
+
+7
+00:00:16,320 --> 00:00:20,340
+orchestration and deployment will focus
+
+8
+00:00:19,260 --> 00:00:22,410
+on hands-on learning
+
+9
+00:00:20,340 --> 00:00:24,449
+but first let's explore the trends that
+
+10
+00:00:22,410 --> 00:00:26,640
+are given rise to containers the need
+
+11
+00:00:24,449 --> 00:00:28,439
+for container orchestration and how that
+
+12
+00:00:26,640 --> 00:00:31,710
+it's created the space for kubernetes to
+
+13
+00:00:28,439 --> 00:00:33,480
+rise to dominance and growth the growth
+
+14
+00:00:31,710 --> 00:00:35,700
+of technology into every aspect of our
+
+15
+00:00:33,480 --> 00:00:37,800
+lives and days has created immense
+
+16
+00:00:35,700 --> 00:00:39,059
+demand on software the companies and
+
+17
+00:00:37,800 --> 00:00:41,430
+organizations that sell and deliver
+
+18
+00:00:39,059 --> 00:00:43,710
+products based on software or just use
+
+19
+00:00:41,430 --> 00:00:46,020
+software in their businesses this really
+
+20
+00:00:43,710 --> 00:00:47,910
+is nearly any business and anyone who
+
+21
+00:00:46,020 --> 00:00:50,550
+doesn't live entirely off the grid
+
+22
+00:00:47,910 --> 00:00:52,829
+this pressure has spurred innovation and
+
+23
+00:00:50,550 --> 00:00:55,350
+standardization and the needs and stakes
+
+24
+00:00:52,829 --> 00:00:57,420
+are so high it is fundamentally changed
+
+25
+00:00:55,350 --> 00:00:59,760
+house offers developed and deployed into
+
+26
+00:00:57,420 --> 00:01:00,960
+production but this evolution isn't
+
+27
+00:00:59,760 --> 00:01:03,510
+without precedent
+
+28
+00:01:00,960 --> 00:01:05,400
+could you imagine the world's economy
+
+29
+00:01:03,510 --> 00:01:07,439
+relying on methods like this for the
+
+30
+00:01:05,400 --> 00:01:10,740
+trade of goods there would be no way
+
+31
+00:01:07,439 --> 00:01:11,970
+you'd get your new iPhone in time now we
+
+32
+00:01:10,740 --> 00:01:13,680
+take it for granted that shipping
+
+33
+00:01:11,970 --> 00:01:15,409
+containers efficiently move between
+
+34
+00:01:13,680 --> 00:01:17,490
+different modes of transportation
+
+35
+00:01:15,409 --> 00:01:19,409
+different ship owners and shipping
+
+36
+00:01:17,490 --> 00:01:21,720
+companies and have standardized
+
+37
+00:01:19,409 --> 00:01:24,240
+ubiquitous and available anywhere in the
+
+38
+00:01:21,720 --> 00:01:28,890
+world almost always no matter what it's
+
+39
+00:01:24,240 --> 00:01:31,110
+in if it fits it ships modern software
+
+40
+00:01:28,890 --> 00:01:32,970
+is becoming quite similar as software
+
+41
+00:01:31,110 --> 00:01:35,040
+systems become more complicated this
+
+42
+00:01:32,970 --> 00:01:36,869
+complication has driven software to be
+
+43
+00:01:35,040 --> 00:01:38,970
+divided into smaller pieces such as
+
+44
+00:01:36,869 --> 00:01:40,799
+micro services whether they're called
+
+45
+00:01:38,970 --> 00:01:42,450
+micro services or not these smaller
+
+46
+00:01:40,799 --> 00:01:45,540
+pieces of software each need to be
+
+47
+00:01:42,450 --> 00:01:47,549
+packaged built deployed and accessed by
+
+48
+00:01:45,540 --> 00:01:49,829
+other pieces of software around them to
+
+49
+00:01:47,549 --> 00:01:51,720
+function as a total system these small
+
+50
+00:01:49,829 --> 00:01:54,149
+pieces of software can be deployed into
+
+51
+00:01:51,720 --> 00:01:57,240
+containers that allow them to run on the
+
+52
+00:01:54,149 --> 00:01:58,860
+same machine virtual or real but making
+
+53
+00:01:57,240 --> 00:02:01,290
+it appear to the software that is the
+
+54
+00:01:58,860 --> 00:02:02,460
+only process running here's where we
+
+55
+00:02:01,290 --> 00:02:04,200
+depart from the shipping container
+
+56
+00:02:02,460 --> 00:02:06,210
+metaphor a bit while it should be
+
+57
+00:02:04,200 --> 00:02:08,280
+containers sole job is to keep things
+
+58
+00:02:06,210 --> 00:02:10,289
+contained within itself typically
+
+59
+00:02:08,280 --> 00:02:12,319
+interesting and useful software depends
+
+60
+00:02:10,289 --> 00:02:14,689
+on other software around it too
+
+61
+00:02:12,319 --> 00:02:18,290
+it's job here is where the need for
+
+62
+00:02:14,689 --> 00:02:19,879
+container orchestration is born there
+
+63
+00:02:18,290 --> 00:02:21,590
+are definite benefits and keeping
+
+64
+00:02:19,879 --> 00:02:23,930
+logically distinct soft fare separate
+
+65
+00:02:21,590 --> 00:02:26,569
+from each other you can develop deploy
+
+66
+00:02:23,930 --> 00:02:28,969
+scale and maintain each small piece
+
+67
+00:02:26,569 --> 00:02:31,159
+without too much fuss between the other
+
+68
+00:02:28,969 --> 00:02:34,189
+parts of the system when it's not all in
+
+69
+00:02:31,159 --> 00:02:36,010
+the same module however at some point
+
+70
+00:02:34,189 --> 00:02:38,450
+different parts of your application
+
+71
+00:02:36,010 --> 00:02:40,669
+likely to communicate with each other to
+
+72
+00:02:38,450 --> 00:02:42,560
+do something interesting for example an
+
+73
+00:02:40,669 --> 00:02:44,810
+API may need to communicate with
+
+74
+00:02:42,560 --> 00:02:46,750
+business logic it needs in turn to
+
+75
+00:02:44,810 --> 00:02:49,280
+access information or database
+
+76
+00:02:46,750 --> 00:02:51,949
+containers themselves keep logically
+
+77
+00:02:49,280 --> 00:02:54,379
+distinct pieces of software separate so
+
+78
+00:02:51,949 --> 00:02:56,989
+they can be built deployed maintained
+
+79
+00:02:54,379 --> 00:02:59,269
+managed and scaled on their own without
+
+80
+00:02:56,989 --> 00:03:02,329
+unduly affecting other parts of the
+
+81
+00:02:59,269 --> 00:03:04,969
+system container orchestration on the
+
+82
+00:03:02,329 --> 00:03:07,760
+other hand defines how these containers
+
+83
+00:03:04,969 --> 00:03:10,760
+interact as a system the needs between
+
+84
+00:03:07,760 --> 00:03:13,849
+each other and how they come together to
+
+85
+00:03:10,760 --> 00:03:19,129
+your performant manageable reliable and
+
+86
+00:03:13,849 --> 00:03:21,409
+scalable system it is currently safe to
+
+87
+00:03:19,129 --> 00:03:24,079
+say that docker is the dominant leader
+
+88
+00:03:21,409 --> 00:03:26,750
+in both technology and an adoption in
+
+89
+00:03:24,079 --> 00:03:29,599
+containers while others exist in the
+
+90
+00:03:26,750 --> 00:03:31,430
+space their dominance is so great when
+
+91
+00:03:29,599 --> 00:03:34,400
+you mention containers it is almost
+
+92
+00:03:31,430 --> 00:03:36,560
+synonymous with docker other players
+
+93
+00:03:34,400 --> 00:03:38,299
+exist in niche applications and some
+
+94
+00:03:36,560 --> 00:03:41,090
+movement around standardisation is
+
+95
+00:03:38,299 --> 00:03:43,129
+occurring although is nascent at the
+
+96
+00:03:41,090 --> 00:03:45,799
+docker file standard is essentially
+
+97
+00:03:43,129 --> 00:03:48,259
+today's standard and docker repositories
+
+98
+00:03:45,799 --> 00:03:50,030
+define the dominant way of hosting
+
+99
+00:03:48,259 --> 00:03:52,189
+versions of a container between
+
+100
+00:03:50,030 --> 00:03:54,349
+developers and between systems that need
+
+101
+00:03:52,189 --> 00:03:57,500
+to use them such as orchestration
+
+102
+00:03:54,349 --> 00:04:00,169
+systems like kubernetes since container
+
+103
+00:03:57,500 --> 00:04:02,180
+orchestration is a much newer space only
+
+104
+00:04:00,169 --> 00:04:04,370
+growing since the adoption of containers
+
+105
+00:04:02,180 --> 00:04:06,859
+the technologies are newer and still
+
+106
+00:04:04,370 --> 00:04:09,079
+evolving however kubernetes is quite
+
+107
+00:04:06,859 --> 00:04:10,939
+advanced and with Amazon Web Services
+
+108
+00:04:09,079 --> 00:04:13,669
+finally joining its competitors and
+
+109
+00:04:10,939 --> 00:04:16,130
+embracing kubernetes it has the backing
+
+110
+00:04:13,669 --> 00:04:18,079
+of nearly every major player and cloud
+
+111
+00:04:16,130 --> 00:04:20,630
+computing through the cloud native
+
+112
+00:04:18,079 --> 00:04:23,659
+computing foundation also known as the
+
+113
+00:04:20,630 --> 00:04:26,160
+CN CF the organization that now governs
+
+114
+00:04:23,659 --> 00:04:28,350
+kubernetes it has essentially
+
+115
+00:04:26,160 --> 00:04:30,450
+come the de facto standard especially
+
+116
+00:04:28,350 --> 00:04:33,170
+now that it's Mearing alternative
+
+117
+00:04:30,450 --> 00:04:35,460
+competing technology docker swarm
+
+118
+00:04:33,170 --> 00:04:37,920
+Dockers solution to container
+
+119
+00:04:35,460 --> 00:04:40,200
+orchestration has now announced support
+
+120
+00:04:37,920 --> 00:04:42,780
+for kubernetes style configuration and
+
+121
+00:04:40,200 --> 00:04:45,330
+processing it is clear that kubernetes
+
+122
+00:04:42,780 --> 00:04:47,670
+is now the de facto standard if not the
+
+123
+00:04:45,330 --> 00:04:51,230
+acknowledged standard in the industry
+
+124
+00:04:47,670 --> 00:04:51,230
+and container orchestration
+
+125
+00:04:51,800 --> 00:04:55,860
+containerization changed how software
+
+126
+00:04:53,760 --> 00:04:58,110
+was developed and packaged container
+
+127
+00:04:55,860 --> 00:05:00,860
+orchestration is changing how containers
+
+128
+00:04:58,110 --> 00:05:03,630
+are deployed into bigger useful systems
+
+129
+00:05:00,860 --> 00:05:05,880
+from here on out we'll focus on how to
+
+130
+00:05:03,630 --> 00:05:07,590
+use kubernetes as your framework for
+
+131
+00:05:05,880 --> 00:05:10,020
+container management using docker
+
+132
+00:05:07,590 --> 00:05:12,780
+containers in the next lecture we'll
+
+133
+00:05:10,020 --> 00:05:16,370
+focus on the growth lineage of and why
+
+134
+00:05:12,780 --> 00:05:16,370
+the market has chosen kubernetes

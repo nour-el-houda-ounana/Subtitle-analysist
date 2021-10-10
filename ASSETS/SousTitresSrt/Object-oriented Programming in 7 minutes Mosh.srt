@@ -1,0 +1,723 @@
+1
+00:00:00,000 --> 00:00:04,230
+[Music]
+
+2
+00:00:00,329 --> 00:00:05,990
+a popular interview question concerns
+
+3
+00:00:04,230 --> 00:00:08,099
+the four core concepts in
+
+4
+00:00:05,990 --> 00:00:11,719
+object-oriented programming this
+
+5
+00:00:08,099 --> 00:00:15,480
+concepts are encapsulation abstraction
+
+6
+00:00:11,719 --> 00:00:17,460
+inheritance and polymorphism let's look
+
+7
+00:00:15,480 --> 00:00:19,500
+at each of these concepts before
+
+8
+00:00:17,460 --> 00:00:21,480
+object-oriented programming we had
+
+9
+00:00:19,500 --> 00:00:23,970
+procedure of programming that divided a
+
+10
+00:00:21,480 --> 00:00:26,160
+program into a set of functions so we
+
+11
+00:00:23,970 --> 00:00:28,800
+have data stored in a bunch of variables
+
+12
+00:00:26,160 --> 00:00:31,710
+and functions that operate on the data
+
+13
+00:00:28,800 --> 00:00:33,960
+this style of programming is very simple
+
+14
+00:00:31,710 --> 00:00:36,059
+and straightforward often it's what you
+
+15
+00:00:33,960 --> 00:00:38,430
+learn as part of your first programming
+
+16
+00:00:36,059 --> 00:00:40,379
+subject at a university but as your
+
+17
+00:00:38,430 --> 00:00:42,300
+programs grow it will end up with a
+
+18
+00:00:40,379 --> 00:00:44,700
+bunch of functions that are all over the
+
+19
+00:00:42,300 --> 00:00:47,010
+place you might find yourself copying
+
+20
+00:00:44,700 --> 00:00:49,020
+and pasting lines of code over and over
+
+21
+00:00:47,010 --> 00:00:51,120
+you make a change to one function and
+
+22
+00:00:49,020 --> 00:00:54,030
+then several other functions break
+
+23
+00:00:51,120 --> 00:00:56,250
+that's what we call spaghetti code there
+
+24
+00:00:54,030 --> 00:00:59,180
+is so much interdependence e between all
+
+25
+00:00:56,250 --> 00:01:01,230
+these functions it becomes problematic
+
+26
+00:00:59,180 --> 00:01:03,390
+object-oriented programming came to
+
+27
+00:01:01,230 --> 00:01:05,280
+solve this problem in object-oriented
+
+28
+00:01:03,390 --> 00:01:07,770
+programming we combine a group of
+
+29
+00:01:05,280 --> 00:01:11,640
+related variables and functions into a
+
+30
+00:01:07,770 --> 00:01:13,860
+unit we call that unit an object we
+
+31
+00:01:11,640 --> 00:01:16,979
+refer to these variables as properties
+
+32
+00:01:13,860 --> 00:01:20,009
+and the functions as methods here's an
+
+33
+00:01:16,979 --> 00:01:22,259
+example think of a car a car is an
+
+34
+00:01:20,009 --> 00:01:25,830
+object with properties such as make
+
+35
+00:01:22,259 --> 00:01:29,040
+model and color and methods like start
+
+36
+00:01:25,830 --> 00:01:29,430
+stop and move now you might say what
+
+37
+00:01:29,040 --> 00:01:31,680
+marche
+
+38
+00:01:29,430 --> 00:01:34,890
+we don't have cars in our programs give
+
+39
+00:01:31,680 --> 00:01:36,780
+me a real programming example ok think
+
+40
+00:01:34,890 --> 00:01:39,360
+of the local storage object in your
+
+41
+00:01:36,780 --> 00:01:42,060
+browser's every browser has a local
+
+42
+00:01:39,360 --> 00:01:45,060
+storage object that allows you to store
+
+43
+00:01:42,060 --> 00:01:47,610
+data locally this local storage object
+
+44
+00:01:45,060 --> 00:01:49,500
+has a property like length which returns
+
+45
+00:01:47,610 --> 00:01:53,220
+the number of objects in the storage and
+
+46
+00:01:49,500 --> 00:01:55,380
+metals like set item and remove item so
+
+47
+00:01:53,220 --> 00:01:57,810
+in object-oriented programming we group
+
+48
+00:01:55,380 --> 00:02:00,689
+related variables and functions that
+
+49
+00:01:57,810 --> 00:02:03,719
+operate on them into objects and this is
+
+50
+00:02:00,689 --> 00:02:06,329
+what we call encapsulation let me show
+
+51
+00:02:03,719 --> 00:02:09,119
+you an example of this in action so here
+
+52
+00:02:06,329 --> 00:02:12,180
+we have three variables base salary over
+
+53
+00:02:09,119 --> 00:02:12,700
+time and rate below these we have a
+
+54
+00:02:12,180 --> 00:02:15,849
+function
+
+55
+00:02:12,700 --> 00:02:17,680
+to calculate the wage for an employee we
+
+56
+00:02:15,849 --> 00:02:20,230
+refer to this kind of implementation as
+
+57
+00:02:17,680 --> 00:02:22,480
+procedural so we have variables on one
+
+58
+00:02:20,230 --> 00:02:25,090
+side and functions on the other side
+
+59
+00:02:22,480 --> 00:02:27,370
+they're hard decoupled now let's take a
+
+60
+00:02:25,090 --> 00:02:29,380
+look at the object-oriented way to solve
+
+61
+00:02:27,370 --> 00:02:32,500
+this problem we can have an employee
+
+62
+00:02:29,380 --> 00:02:35,590
+object with three properties a salary
+
+63
+00:02:32,500 --> 00:02:38,890
+over time and rate and a method called
+
+64
+00:02:35,590 --> 00:02:40,810
+get wage now why is this better well
+
+65
+00:02:38,890 --> 00:02:43,599
+first of all look at the get wage
+
+66
+00:02:40,810 --> 00:02:47,110
+function this function has no parameters
+
+67
+00:02:43,599 --> 00:02:49,810
+in contrast in a procedural example our
+
+68
+00:02:47,110 --> 00:02:52,030
+get wage function has three parameters
+
+69
+00:02:49,810 --> 00:02:54,250
+the reason in this implementation we
+
+70
+00:02:52,030 --> 00:02:56,880
+don't have any parameters is because all
+
+71
+00:02:54,250 --> 00:03:00,069
+these parameters are actually modeled as
+
+72
+00:02:56,880 --> 00:03:02,200
+properties of this object all these
+
+73
+00:03:00,069 --> 00:03:04,299
+properties and the get wage function
+
+74
+00:03:02,200 --> 00:03:06,700
+they are highly related so they are part
+
+75
+00:03:04,299 --> 00:03:09,459
+of one unit so one of the symptoms of
+
+76
+00:03:06,700 --> 00:03:12,010
+procedural code is functions with so
+
+77
+00:03:09,459 --> 00:03:14,110
+many parameters when you write code in
+
+78
+00:03:12,010 --> 00:03:16,510
+an object-oriented way your functions
+
+79
+00:03:14,110 --> 00:03:20,019
+end up having fewer and fewer parameters
+
+80
+00:03:16,510 --> 00:03:22,690
+as Uncle Bob says the best functions are
+
+81
+00:03:20,019 --> 00:03:24,880
+those with no parameters the fewer the
+
+82
+00:03:22,690 --> 00:03:27,549
+number of parameters the easier it is to
+
+83
+00:03:24,880 --> 00:03:29,680
+use and maintain that function so that's
+
+84
+00:03:27,549 --> 00:03:32,769
+encapsulation now let's look at
+
+85
+00:03:29,680 --> 00:03:35,650
+abstraction think of a DVD player as an
+
+86
+00:03:32,769 --> 00:03:38,230
+object this DVD player has a complex
+
+87
+00:03:35,650 --> 00:03:40,209
+logic board on the inside and a few
+
+88
+00:03:38,230 --> 00:03:42,280
+buttons on the outside that you interact
+
+89
+00:03:40,209 --> 00:03:44,859
+with you simply press the play button
+
+90
+00:03:42,280 --> 00:03:47,319
+and you don't care what happens on the
+
+91
+00:03:44,859 --> 00:03:49,959
+inside all that complexity is hidden
+
+92
+00:03:47,319 --> 00:03:52,209
+from you this is abstraction in practice
+
+93
+00:03:49,959 --> 00:03:54,579
+we can use the same technique in our
+
+94
+00:03:52,209 --> 00:03:56,769
+objects so we can hide some of the
+
+95
+00:03:54,579 --> 00:03:59,160
+properties and methods from the outside
+
+96
+00:03:56,769 --> 00:04:01,630
+and this gives us a couple of benefits
+
+97
+00:03:59,160 --> 00:04:04,540
+first is that we'll make the interface
+
+98
+00:04:01,630 --> 00:04:06,400
+of those objects simpler using an
+
+99
+00:04:04,540 --> 00:04:08,980
+understanding an object with a few
+
+100
+00:04:06,400 --> 00:04:11,019
+properties and methods is easier than an
+
+101
+00:04:08,980 --> 00:04:14,049
+object with several properties and
+
+102
+00:04:11,019 --> 00:04:16,750
+methods the second benefit is that it
+
+103
+00:04:14,049 --> 00:04:19,630
+helps us reduce the impact of change
+
+104
+00:04:16,750 --> 00:04:22,760
+let's imagine that tomorrow we change
+
+105
+00:04:19,630 --> 00:04:24,740
+these inner or private methods
+
+106
+00:04:22,760 --> 00:04:26,720
+these changes will leak to the outside
+
+107
+00:04:24,740 --> 00:04:28,700
+because we don't have any code that
+
+108
+00:04:26,720 --> 00:04:31,340
+touches these methods outside of their
+
+109
+00:04:28,700 --> 00:04:33,710
+containing object we may delete a method
+
+110
+00:04:31,340 --> 00:04:35,840
+or change its parameters but none of
+
+111
+00:04:33,710 --> 00:04:38,270
+these changes will impact the rest of
+
+112
+00:04:35,840 --> 00:04:40,550
+the applications code so with
+
+113
+00:04:38,270 --> 00:04:43,400
+abstraction we reduce the impact of
+
+114
+00:04:40,550 --> 00:04:45,530
+change now the third core concept in
+
+115
+00:04:43,400 --> 00:04:48,380
+object-oriented programming inheritance
+
+116
+00:04:45,530 --> 00:04:51,410
+inheritance is a mechanism that allows
+
+117
+00:04:48,380 --> 00:04:54,500
+you to eliminate redundant code here's
+
+118
+00:04:51,410 --> 00:04:57,440
+an example think of HTML elements like
+
+119
+00:04:54,500 --> 00:04:58,130
+text boxes drop-down lists checkboxes
+
+120
+00:04:57,440 --> 00:05:00,500
+and so on
+
+121
+00:04:58,130 --> 00:05:02,570
+all these elements have a few things in
+
+122
+00:05:00,500 --> 00:05:05,630
+common they should have properties like
+
+123
+00:05:02,570 --> 00:05:08,810
+hidden and inner HTML and metals like
+
+124
+00:05:05,630 --> 00:05:10,940
+click and focus instead of redefining
+
+125
+00:05:08,810 --> 00:05:14,120
+all these properties and methods for
+
+126
+00:05:10,940 --> 00:05:16,670
+every type of HTML element we can define
+
+127
+00:05:14,120 --> 00:05:19,670
+them once in a generic object call it
+
+128
+00:05:16,670 --> 00:05:22,640
+HTML element and have other objects
+
+129
+00:05:19,670 --> 00:05:25,580
+inherit these properties and methods so
+
+130
+00:05:22,640 --> 00:05:29,690
+inheritance helps us eliminate redundant
+
+131
+00:05:25,580 --> 00:05:33,770
+code and finally polymorphism poly means
+
+132
+00:05:29,690 --> 00:05:36,590
+many more means form so polymorphism
+
+133
+00:05:33,770 --> 00:05:38,840
+means many forms in object-oriented
+
+134
+00:05:36,590 --> 00:05:41,060
+programming polymorphism is a technique
+
+135
+00:05:38,840 --> 00:05:42,140
+that allows you to get rid of long
+
+136
+00:05:41,060 --> 00:05:45,410
+ethanol's
+
+137
+00:05:42,140 --> 00:05:48,020
+or switch and case statements so back to
+
+138
+00:05:45,410 --> 00:05:50,090
+our HTML elements example all these
+
+139
+00:05:48,020 --> 00:05:52,640
+objects should have the ability to be
+
+140
+00:05:50,090 --> 00:05:54,890
+rendered on a page but the way each
+
+141
+00:05:52,640 --> 00:05:56,990
+element is rendered is different from
+
+142
+00:05:54,890 --> 00:05:59,570
+the others if you want to render
+
+143
+00:05:56,990 --> 00:06:01,730
+multiple HTML elements in a procedural
+
+144
+00:05:59,570 --> 00:06:04,880
+way our code would probably look like
+
+145
+00:06:01,730 --> 00:06:07,070
+this but with object orientation we can
+
+146
+00:06:04,880 --> 00:06:09,590
+implement a render method in each of
+
+147
+00:06:07,070 --> 00:06:12,350
+these objects and the render method will
+
+148
+00:06:09,590 --> 00:06:15,530
+behave differently depending on the type
+
+149
+00:06:12,350 --> 00:06:17,330
+of the object you're referencing so we
+
+150
+00:06:15,530 --> 00:06:19,850
+can get rid of this nasty switch and
+
+151
+00:06:17,330 --> 00:06:22,880
+case and use one line of code like this
+
+152
+00:06:19,850 --> 00:06:25,040
+you will see that later in the course so
+
+153
+00:06:22,880 --> 00:06:27,890
+here are the benefits of object oriented
+
+154
+00:06:25,040 --> 00:06:30,200
+programming using encapsulation we group
+
+155
+00:06:27,890 --> 00:06:33,100
+related variables and functions together
+
+156
+00:06:30,200 --> 00:06:36,200
+and this way we can reduce complexity
+
+157
+00:06:33,100 --> 00:06:38,240
+now we can reuse this object and do
+
+158
+00:06:36,200 --> 00:06:41,210
+from parts of a program or in different
+
+159
+00:06:38,240 --> 00:06:44,090
+programs with abstraction we hide the
+
+160
+00:06:41,210 --> 00:06:46,940
+details and the complexity and show only
+
+161
+00:06:44,090 --> 00:06:50,030
+the essentials this technique reduces
+
+162
+00:06:46,940 --> 00:06:52,730
+complexity and also isolates the impact
+
+163
+00:06:50,030 --> 00:06:55,730
+of changes in the code with inheritance
+
+164
+00:06:52,730 --> 00:06:58,790
+we can eliminate redundant code and with
+
+165
+00:06:55,730 --> 00:07:01,630
+polymorphism we can refactor ugly switch
+
+166
+00:06:58,790 --> 00:07:01,630
+case statements
+
+167
+00:07:03,639 --> 00:07:08,469
+well hello it's me mash again I wanted
+
+168
+00:07:06,520 --> 00:07:10,090
+to say thank you very much for watching
+
+169
+00:07:08,469 --> 00:07:12,099
+this tutorial to the end I hope you
+
+170
+00:07:10,090 --> 00:07:14,020
+learned a lot please share and like this
+
+171
+00:07:12,099 --> 00:07:15,189
+video to support me if you want to learn
+
+172
+00:07:14,020 --> 00:07:17,289
+more about the object-oriented
+
+173
+00:07:15,189 --> 00:07:19,000
+programming as I told you before I have
+
+174
+00:07:17,289 --> 00:07:21,310
+a course called object-oriented
+
+175
+00:07:19,000 --> 00:07:23,169
+programming in JavaScript if you want to
+
+176
+00:07:21,310 --> 00:07:24,909
+learn more click on the link in the
+
+177
+00:07:23,169 --> 00:07:27,699
+video description and enroll in the
+
+178
+00:07:24,909 --> 00:07:29,409
+course if not that's perfectly fine make
+
+179
+00:07:27,699 --> 00:07:32,199
+sure to subscribe to my channel because
+
+180
+00:07:29,409 --> 00:07:35,009
+I upload new videos every week thank you
+
+181
+00:07:32,199 --> 00:07:35,009
+and have a great day

@@ -1,0 +1,563 @@
+1
+00:00:00,000 --> 00:00:03,629
+[Music]
+
+2
+00:00:01,250 --> 00:00:06,540
+let's start the section by a brief
+
+3
+00:00:03,629 --> 00:00:09,300
+introduction to restful services also
+
+4
+00:00:06,540 --> 00:00:11,820
+called restful api s-- if you already
+
+5
+00:00:09,300 --> 00:00:14,190
+know what rest is all about feel free to
+
+6
+00:00:11,820 --> 00:00:16,350
+skip this video so earlier at the
+
+7
+00:00:14,190 --> 00:00:19,260
+beginning of the course I introduced you
+
+8
+00:00:16,350 --> 00:00:21,449
+to the client-server architecture so
+
+9
+00:00:19,260 --> 00:00:22,140
+most if not all applications we use
+
+10
+00:00:21,449 --> 00:00:24,900
+these days
+
+11
+00:00:22,140 --> 00:00:27,599
+follow this architecture the app itself
+
+12
+00:00:24,900 --> 00:00:30,359
+is the client or the front-end part
+
+13
+00:00:27,599 --> 00:00:33,210
+under the hood it needs to talk to a
+
+14
+00:00:30,359 --> 00:00:35,880
+server or the back-end to get or save
+
+15
+00:00:33,210 --> 00:00:38,520
+the data this communication happens
+
+16
+00:00:35,880 --> 00:00:41,250
+using the HTTP protocol the same
+
+17
+00:00:38,520 --> 00:00:44,160
+protocol that powers our web so on the
+
+18
+00:00:41,250 --> 00:00:46,920
+server we expose a bunch of services
+
+19
+00:00:44,160 --> 00:00:49,590
+that are accessible via the HTTP
+
+20
+00:00:46,920 --> 00:00:52,410
+protocol the client can then directly
+
+21
+00:00:49,590 --> 00:00:55,620
+call the services by sending HTTP
+
+22
+00:00:52,410 --> 00:00:56,520
+requests now this is where rest comes
+
+23
+00:00:55,620 --> 00:00:59,820
+into the picture
+
+24
+00:00:56,520 --> 00:01:01,920
+rest is short for representational state
+
+25
+00:00:59,820 --> 00:01:04,049
+transfer and I know it probably doesn't
+
+26
+00:01:01,920 --> 00:01:06,869
+make any sense to you because it was
+
+27
+00:01:04,049 --> 00:01:10,049
+introduced by a PhD student as part of
+
+28
+00:01:06,869 --> 00:01:12,150
+his thesis but the theory aside rest is
+
+29
+00:01:10,049 --> 00:01:15,600
+basically a convention for building
+
+30
+00:01:12,150 --> 00:01:18,420
+these HTTP services so we use simple
+
+31
+00:01:15,600 --> 00:01:21,600
+HTTP protocol principles to provide
+
+32
+00:01:18,420 --> 00:01:24,869
+support to create read update and delete
+
+33
+00:01:21,600 --> 00:01:28,290
+data we refer to these operations all
+
+34
+00:01:24,869 --> 00:01:30,270
+together as crud operations now let's
+
+35
+00:01:28,290 --> 00:01:32,369
+explore this convention using every
+
+36
+00:01:30,270 --> 00:01:34,590
+award example let's say we have a
+
+37
+00:01:32,369 --> 00:01:37,350
+company called bitly for renting out
+
+38
+00:01:34,590 --> 00:01:40,020
+movies we have a client app where we
+
+39
+00:01:37,350 --> 00:01:42,720
+manage the list of our customers on the
+
+40
+00:01:40,020 --> 00:01:45,990
+server we should expose a service and an
+
+41
+00:01:42,720 --> 00:01:48,930
+endpoint like this so really calm slash
+
+42
+00:01:45,990 --> 00:01:51,720
+API slash customers so the client can
+
+43
+00:01:48,930 --> 00:01:54,149
+send HTTP requests to this endpoint to
+
+44
+00:01:51,720 --> 00:01:55,799
+talk to our service now a few things
+
+45
+00:01:54,149 --> 00:01:58,890
+about this endpoint you need to know
+
+46
+00:01:55,799 --> 00:02:02,490
+first of all the address can start with
+
+47
+00:01:58,890 --> 00:02:04,799
+HTTP or HTTPS that depends on the
+
+48
+00:02:02,490 --> 00:02:06,630
+application and its requirements if you
+
+49
+00:02:04,799 --> 00:02:10,379
+want the data to be exchanged on a
+
+50
+00:02:06,630 --> 00:02:11,760
+secure Channel you would use HTTPS after
+
+51
+00:02:10,379 --> 00:02:12,950
+that we have the domain of the
+
+52
+00:02:11,760 --> 00:02:15,770
+application
+
+53
+00:02:12,950 --> 00:02:17,360
+next we have slash API this is not
+
+54
+00:02:15,770 --> 00:02:19,730
+compulsory but you see a lot of
+
+55
+00:02:17,360 --> 00:02:22,610
+companies follow this convention to
+
+56
+00:02:19,730 --> 00:02:24,980
+expose their restful services they
+
+57
+00:02:22,610 --> 00:02:28,280
+include the word API somewhere in the
+
+58
+00:02:24,980 --> 00:02:31,220
+address it can be after the domain or it
+
+59
+00:02:28,280 --> 00:02:34,819
+can be a subdomain like API that vidlink
+
+60
+00:02:31,220 --> 00:02:37,400
+aam there is no hard and fast rule after
+
+61
+00:02:34,819 --> 00:02:40,130
+that we have slash customers which
+
+62
+00:02:37,400 --> 00:02:42,739
+refers to the collection of customers in
+
+63
+00:02:40,130 --> 00:02:45,560
+our application in the rest world we
+
+64
+00:02:42,739 --> 00:02:48,140
+refer to this part as a resource we can
+
+65
+00:02:45,560 --> 00:02:52,310
+expose our resources such as customers
+
+66
+00:02:48,140 --> 00:02:54,140
+movies rentals on various endpoints so
+
+67
+00:02:52,310 --> 00:02:56,599
+this is our endpoint to work with the
+
+68
+00:02:54,140 --> 00:02:59,120
+customers all the operations around
+
+69
+00:02:56,599 --> 00:03:01,700
+customers such as creating a customer or
+
+70
+00:02:59,120 --> 00:03:03,970
+updating a customer would be done by
+
+71
+00:03:01,700 --> 00:03:07,160
+sending an HTTP request to this endpoint
+
+72
+00:03:03,970 --> 00:03:10,130
+the type of the HTTP request determines
+
+73
+00:03:07,160 --> 00:03:12,799
+the kind of the operation so every HTTP
+
+74
+00:03:10,130 --> 00:03:15,470
+request has what we call a verb or
+
+75
+00:03:12,799 --> 00:03:18,650
+method that determines its type or
+
+76
+00:03:15,470 --> 00:03:21,430
+intention here are the standard HTTP
+
+77
+00:03:18,650 --> 00:03:25,579
+methods we have yet for getting data
+
+78
+00:03:21,430 --> 00:03:29,090
+post or creating data put for updating
+
+79
+00:03:25,579 --> 00:03:31,160
+data and delayed for deleting data now
+
+80
+00:03:29,090 --> 00:03:33,950
+let's explore each of these using our
+
+81
+00:03:31,160 --> 00:03:36,470
+customers example to get the list of all
+
+82
+00:03:33,950 --> 00:03:39,290
+customers we should send an HTTP GET
+
+83
+00:03:36,470 --> 00:03:42,680
+request to this address note the full
+
+84
+00:03:39,290 --> 00:03:45,769
+name customers here it indicates a list
+
+85
+00:03:42,680 --> 00:03:48,170
+of customers so when we send an HTTP GET
+
+86
+00:03:45,769 --> 00:03:51,019
+request to this endpoint our service
+
+87
+00:03:48,170 --> 00:03:54,380
+should send us something like this so we
+
+88
+00:03:51,019 --> 00:03:56,480
+have an array of customer objects if you
+
+89
+00:03:54,380 --> 00:03:58,549
+want a single customer we should include
+
+90
+00:03:56,480 --> 00:04:01,430
+the idea of that customer in the address
+
+91
+00:03:58,549 --> 00:04:04,340
+then our server would respond with a
+
+92
+00:04:01,430 --> 00:04:07,519
+customer object like this now to update
+
+93
+00:04:04,340 --> 00:04:09,950
+a customer we should send an HTTP put
+
+94
+00:04:07,519 --> 00:04:12,440
+request to this endpoint and note that
+
+95
+00:04:09,950 --> 00:04:15,530
+again here we're specifying the idea of
+
+96
+00:04:12,440 --> 00:04:17,479
+the customer to be updated but also we
+
+97
+00:04:15,530 --> 00:04:20,120
+should include the customer object in
+
+98
+00:04:17,479 --> 00:04:22,220
+the body of the request so this is a
+
+99
+00:04:20,120 --> 00:04:25,020
+complete representation of the customer
+
+100
+00:04:22,220 --> 00:04:26,910
+object with updated properties
+
+101
+00:04:25,020 --> 00:04:28,680
+we send this to the server and the
+
+102
+00:04:26,910 --> 00:04:31,009
+server updates the customer with the
+
+103
+00:04:28,680 --> 00:04:34,349
+given ID according to these values
+
+104
+00:04:31,009 --> 00:04:36,599
+similarly to delete a customer we should
+
+105
+00:04:34,349 --> 00:04:38,520
+send an HTTP delete request to this
+
+106
+00:04:36,599 --> 00:04:40,650
+endpoint but here we don't need to
+
+107
+00:04:38,520 --> 00:04:42,900
+include the customer object in the body
+
+108
+00:04:40,650 --> 00:04:46,020
+of the request because all we need to
+
+109
+00:04:42,900 --> 00:04:48,539
+delete a customer is an ID and finally
+
+110
+00:04:46,020 --> 00:04:51,630
+to create a customer we need to send an
+
+111
+00:04:48,539 --> 00:04:53,280
+HTTP POST request to this endpoint note
+
+112
+00:04:51,630 --> 00:04:55,319
+that here because we are adding a new
+
+113
+00:04:53,280 --> 00:04:57,479
+customer you're not dealing with a
+
+114
+00:04:55,319 --> 00:05:00,000
+specific customer so we don't have the
+
+115
+00:04:57,479 --> 00:05:01,889
+ID in the address you're working with
+
+116
+00:05:00,000 --> 00:05:04,139
+the collection of customers so we are
+
+117
+00:05:01,889 --> 00:05:06,720
+posting a new customer to this collector
+
+118
+00:05:04,139 --> 00:05:08,729
+and that's why we should include the
+
+119
+00:05:06,720 --> 00:05:11,370
+customer object in the body of the
+
+120
+00:05:08,729 --> 00:05:14,009
+request the server gets this object and
+
+121
+00:05:11,370 --> 00:05:16,349
+creates the customer flask so this is
+
+122
+00:05:14,009 --> 00:05:18,720
+the restful convention we expose our
+
+123
+00:05:16,349 --> 00:05:21,960
+resources such as customers using a
+
+124
+00:05:18,720 --> 00:05:24,180
+simple meaningful address and support
+
+125
+00:05:21,960 --> 00:05:26,810
+various operations around them such as
+
+126
+00:05:24,180 --> 00:05:33,330
+creating or updating them using standard
+
+127
+00:05:26,810 --> 00:05:35,460
+HTTP methods hi guys it's March here
+
+128
+00:05:33,330 --> 00:05:36,840
+thank you for watching my tutorial I
+
+129
+00:05:35,460 --> 00:05:39,419
+just wanted to let you know that this
+
+130
+00:05:36,840 --> 00:05:40,949
+video is part of my upcoming node course
+
+131
+00:05:39,419 --> 00:05:42,930
+where you will learn everything about
+
+132
+00:05:40,949 --> 00:05:44,909
+node from their basic to the advanced
+
+133
+00:05:42,930 --> 00:05:48,120
+topics if you want to get the full
+
+134
+00:05:44,909 --> 00:05:49,919
+course with up to 90% discount click on
+
+135
+00:05:48,120 --> 00:05:52,409
+the link in the video description and
+
+136
+00:05:49,919 --> 00:05:54,539
+join my mailing list I'm not gonna spam
+
+137
+00:05:52,409 --> 00:05:56,610
+you and you can unsubscribe at any time
+
+138
+00:05:54,539 --> 00:05:59,009
+as soon as I publish the course I'm
+
+139
+00:05:56,610 --> 00:06:01,500
+gonna send you a coupon so you get the
+
+140
+00:05:59,009 --> 00:06:04,669
+full course with a huge discount thank
+
+141
+00:06:01,500 --> 00:06:04,669
+you and have a great day

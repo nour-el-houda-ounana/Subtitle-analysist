@@ -1,0 +1,839 @@
+1
+00:00:00,000 --> 00:00:04,400
+hi guys welcome back to another video by
+
+2
+00:00:03,199 --> 00:00:07,440
+simply learn
+
+3
+00:00:04,400 --> 00:00:08,080
+in this video we bring to you the top 10
+
+4
+00:00:07,440 --> 00:00:11,759
+iot
+
+5
+00:00:08,080 --> 00:00:13,280
+projects for 2020 but before we begin
+
+6
+00:00:11,759 --> 00:00:15,040
+if you're new here and haven't
+
+7
+00:00:13,280 --> 00:00:16,960
+subscribed already
+
+8
+00:00:15,040 --> 00:00:18,880
+make sure to hit the subscribe button
+
+9
+00:00:16,960 --> 00:00:19,600
+and the bell icon to never miss an
+
+10
+00:00:18,880 --> 00:00:21,840
+update
+
+11
+00:00:19,600 --> 00:00:22,720
+we come up with interesting tech videos
+
+12
+00:00:21,840 --> 00:00:25,279
+every day
+
+13
+00:00:22,720 --> 00:00:25,920
+so moving on here's the list of iot
+
+14
+00:00:25,279 --> 00:00:30,160
+projects
+
+15
+00:00:25,920 --> 00:00:32,559
+for 2020. first up is smart mirror
+
+16
+00:00:30,160 --> 00:00:33,680
+smart mirrors are a very cool iot
+
+17
+00:00:32,559 --> 00:00:35,680
+application
+
+18
+00:00:33,680 --> 00:00:36,719
+these mirrors can be used to display
+
+19
+00:00:35,680 --> 00:00:39,840
+temperature
+
+20
+00:00:36,719 --> 00:00:42,480
+news weather calendar clock
+
+21
+00:00:39,840 --> 00:00:43,120
+and complements on the screen apart from
+
+22
+00:00:42,480 --> 00:00:45,360
+these
+
+23
+00:00:43,120 --> 00:00:46,559
+smart mirrors can be used to click the
+
+24
+00:00:45,360 --> 00:00:49,120
+perfect selfies
+
+25
+00:00:46,559 --> 00:00:50,800
+with a built-in camera it can also be
+
+26
+00:00:49,120 --> 00:00:53,440
+installed with speakers
+
+27
+00:00:50,800 --> 00:00:54,480
+to play some music and they also provide
+
+28
+00:00:53,440 --> 00:00:56,840
+on-demand
+
+29
+00:00:54,480 --> 00:00:59,359
+workout sessions with world-class
+
+30
+00:00:56,840 --> 00:01:00,800
+trainers the mirror can be used to
+
+31
+00:00:59,359 --> 00:01:03,359
+browse the internet
+
+32
+00:01:00,800 --> 00:01:04,720
+make phone calls and even be connected
+
+33
+00:01:03,359 --> 00:01:08,159
+with other devices
+
+34
+00:01:04,720 --> 00:01:09,119
+for collaboration next up is smart money
+
+35
+00:01:08,159 --> 00:01:10,840
+transfer
+
+36
+00:01:09,119 --> 00:01:12,240
+we're heading towards complete
+
+37
+00:01:10,840 --> 00:01:14,479
+digitization
+
+38
+00:01:12,240 --> 00:01:15,280
+transactions are made possible on your
+
+39
+00:01:14,479 --> 00:01:18,159
+cell phone
+
+40
+00:01:15,280 --> 00:01:19,280
+with apps like apple pay google pay and
+
+41
+00:01:18,159 --> 00:01:21,680
+paypal
+
+42
+00:01:19,280 --> 00:01:23,439
+but imagine if you could walk to a store
+
+43
+00:01:21,680 --> 00:01:26,159
+and pay with the wrist watch
+
+44
+00:01:23,439 --> 00:01:28,320
+wouldn't that be cool the purpose of the
+
+45
+00:01:26,159 --> 00:01:30,960
+smart wallet is to provide an
+
+46
+00:01:28,320 --> 00:01:32,240
+easy and reliable platform for money
+
+47
+00:01:30,960 --> 00:01:35,680
+transactions
+
+48
+00:01:32,240 --> 00:01:37,680
+it is compact variable and rechargeable
+
+49
+00:01:35,680 --> 00:01:40,560
+for safety purposes the user
+
+50
+00:01:37,680 --> 00:01:42,079
+authenticity is validated the smart
+
+51
+00:01:40,560 --> 00:01:44,399
+money transfer technology
+
+52
+00:01:42,079 --> 00:01:45,280
+can reduce the burden of mobile money
+
+53
+00:01:44,399 --> 00:01:47,119
+transfer
+
+54
+00:01:45,280 --> 00:01:48,479
+when you're on the go you could easily
+
+55
+00:01:47,119 --> 00:01:51,280
+step into a store
+
+56
+00:01:48,479 --> 00:01:53,520
+purchase the goods and pay hassle free
+
+57
+00:01:51,280 --> 00:01:55,680
+after every successful transaction
+
+58
+00:01:53,520 --> 00:01:57,680
+the balance is updated immediately to
+
+59
+00:01:55,680 --> 00:02:00,880
+avoid any uncertainty
+
+60
+00:01:57,680 --> 00:02:03,520
+next up is iot based smart arm
+
+61
+00:02:00,880 --> 00:02:04,560
+now this project includes the creation
+
+62
+00:02:03,520 --> 00:02:07,439
+of a robotic
+
+63
+00:02:04,560 --> 00:02:09,039
+arm which can pick and place things from
+
+64
+00:02:07,439 --> 00:02:11,920
+one place to another
+
+65
+00:02:09,039 --> 00:02:14,959
+to control this action the robotic arm
+
+66
+00:02:11,920 --> 00:02:18,000
+can be moved using specific commands
+
+67
+00:02:14,959 --> 00:02:20,080
+some advanced arms allow the user to
+
+68
+00:02:18,000 --> 00:02:22,800
+change the end effect of the arm
+
+69
+00:02:20,080 --> 00:02:24,000
+to perform various different actions it
+
+70
+00:02:22,800 --> 00:02:27,440
+can be used to make
+
+71
+00:02:24,000 --> 00:02:28,400
+art print 3d images and build production
+
+72
+00:02:27,440 --> 00:02:30,400
+lines
+
+73
+00:02:28,400 --> 00:02:31,920
+it can also be used to perform your
+
+74
+00:02:30,400 --> 00:02:35,680
+day-to-day chores
+
+75
+00:02:31,920 --> 00:02:38,480
+at number 4 we have smart irrigation
+
+76
+00:02:35,680 --> 00:02:39,840
+now with change in climate and recurrent
+
+77
+00:02:38,480 --> 00:02:42,239
+water crisis
+
+78
+00:02:39,840 --> 00:02:43,200
+farmers suffer a great deal with growing
+
+79
+00:02:42,239 --> 00:02:45,440
+crops
+
+80
+00:02:43,200 --> 00:02:46,560
+smart irrigation puts an end to this
+
+81
+00:02:45,440 --> 00:02:48,800
+ordeal
+
+82
+00:02:46,560 --> 00:02:49,599
+this system comes with the moisture
+
+83
+00:02:48,800 --> 00:02:51,360
+sensor
+
+84
+00:02:49,599 --> 00:02:53,840
+that checks the soil for its water
+
+85
+00:02:51,360 --> 00:02:55,440
+content when the soil moisture drops
+
+86
+00:02:53,840 --> 00:02:58,000
+below a certain value
+
+87
+00:02:55,440 --> 00:02:58,879
+the system triggers the water supply at
+
+88
+00:02:58,000 --> 00:03:01,440
+number 5
+
+89
+00:02:58,879 --> 00:03:02,319
+we have smart door now as the name
+
+90
+00:03:01,440 --> 00:03:04,959
+suggests
+
+91
+00:03:02,319 --> 00:03:05,599
+this project aims at creating smart
+
+92
+00:03:04,959 --> 00:03:08,159
+doors
+
+93
+00:03:05,599 --> 00:03:09,360
+that control the entry and exit of
+
+94
+00:03:08,159 --> 00:03:12,400
+humans
+
+95
+00:03:09,360 --> 00:03:15,360
+these doors open and close automatically
+
+96
+00:03:12,400 --> 00:03:16,080
+when you pass by the door can also be
+
+97
+00:03:15,360 --> 00:03:18,560
+controlled
+
+98
+00:03:16,080 --> 00:03:19,200
+remotely you could unlock the door for a
+
+99
+00:03:18,560 --> 00:03:22,159
+friend
+
+100
+00:03:19,200 --> 00:03:23,360
+by tapping an icon on your smartphone
+
+101
+00:03:22,159 --> 00:03:25,840
+once they exit
+
+102
+00:03:23,360 --> 00:03:26,959
+you're immediately notified the owner
+
+103
+00:03:25,840 --> 00:03:29,760
+can also choose
+
+104
+00:03:26,959 --> 00:03:30,480
+who has the access to the door at number
+
+105
+00:03:29,760 --> 00:03:33,519
+6
+
+106
+00:03:30,480 --> 00:03:35,599
+we have air monitoring system now air
+
+107
+00:03:33,519 --> 00:03:36,480
+monitoring has become crucial for the
+
+108
+00:03:35,599 --> 00:03:38,560
+environment
+
+109
+00:03:36,480 --> 00:03:40,400
+and what better way to do it than
+
+110
+00:03:38,560 --> 00:03:43,760
+incorporating iot
+
+111
+00:03:40,400 --> 00:03:44,720
+the iot system uses air sensors to sense
+
+112
+00:03:43,760 --> 00:03:48,159
+the presence of
+
+113
+00:03:44,720 --> 00:03:50,400
+harmful gases or compounds in the air
+
+114
+00:03:48,159 --> 00:03:51,680
+the data collected can be used by the
+
+115
+00:03:50,400 --> 00:03:54,640
+local authorities
+
+116
+00:03:51,680 --> 00:03:56,400
+to make a detailed analysis necessary
+
+117
+00:03:54,640 --> 00:03:58,879
+actions can also be taken
+
+118
+00:03:56,400 --> 00:04:00,879
+to ensure that the air quality levels
+
+119
+00:03:58,879 --> 00:04:03,360
+don't reach an extreme low
+
+120
+00:04:00,879 --> 00:04:04,560
+especially in areas with hospitals and
+
+121
+00:04:03,360 --> 00:04:07,360
+schools
+
+122
+00:04:04,560 --> 00:04:08,640
+moving on to number seven we have smart
+
+123
+00:04:07,360 --> 00:04:11,280
+alarm clock
+
+124
+00:04:08,640 --> 00:04:12,319
+now there are many variations of a smart
+
+125
+00:04:11,280 --> 00:04:14,959
+alarm clock
+
+126
+00:04:12,319 --> 00:04:16,560
+but the alarm we are talking about is a
+
+127
+00:04:14,959 --> 00:04:19,040
+self-setting alarm
+
+128
+00:04:16,560 --> 00:04:19,919
+the smart alarm clock uses your google
+
+129
+00:04:19,040 --> 00:04:21,919
+calendar
+
+130
+00:04:19,919 --> 00:04:24,080
+to check your appointments to set the
+
+131
+00:04:21,919 --> 00:04:26,880
+alarm it can also procure
+
+132
+00:04:24,080 --> 00:04:28,160
+data from gps about your eta to a
+
+133
+00:04:26,880 --> 00:04:30,000
+particular place
+
+134
+00:04:28,160 --> 00:04:32,800
+and consider the weather to
+
+135
+00:04:30,000 --> 00:04:35,120
+automatically adjust your wake time
+
+136
+00:04:32,800 --> 00:04:36,080
+all of this is just making life more
+
+137
+00:04:35,120 --> 00:04:39,120
+easier
+
+138
+00:04:36,080 --> 00:04:39,600
+moving on at number eight we have iot
+
+139
+00:04:39,120 --> 00:04:42,320
+based
+
+140
+00:04:39,600 --> 00:04:44,160
+weather reporting system now the system
+
+141
+00:04:42,320 --> 00:04:46,960
+deals with monitoring weather
+
+142
+00:04:44,160 --> 00:04:48,000
+and climate changes like humidity
+
+143
+00:04:46,960 --> 00:04:51,520
+temperature
+
+144
+00:04:48,000 --> 00:04:54,400
+moisture wind speed uv radiation
+
+145
+00:04:51,520 --> 00:04:55,520
+light intensity and even carbon monoxide
+
+146
+00:04:54,400 --> 00:04:58,240
+levels in the air
+
+147
+00:04:55,520 --> 00:04:59,759
+using multiple sensors now these
+
+148
+00:04:58,240 --> 00:05:02,080
+installed sensors
+
+149
+00:04:59,759 --> 00:05:04,880
+send data to the web page that is
+
+150
+00:05:02,080 --> 00:05:06,800
+plotted as graphical statistics
+
+151
+00:05:04,880 --> 00:05:09,600
+the project even consists of an
+
+152
+00:05:06,800 --> 00:05:12,400
+application that sends notifications
+
+153
+00:05:09,600 --> 00:05:12,800
+as an effective alert to warn people
+
+154
+00:05:12,400 --> 00:05:15,759
+about
+
+155
+00:05:12,800 --> 00:05:17,120
+sudden and drastic weather changes so
+
+156
+00:05:15,759 --> 00:05:19,360
+when you're heading out
+
+157
+00:05:17,120 --> 00:05:20,560
+the app could easily tell you what the
+
+158
+00:05:19,360 --> 00:05:22,720
+weather will be like
+
+159
+00:05:20,560 --> 00:05:24,639
+and suggest carrying an umbrella or
+
+160
+00:05:22,720 --> 00:05:28,160
+perhaps a sunblock
+
+161
+00:05:24,639 --> 00:05:31,520
+at number nine we have smart wheelchair
+
+162
+00:05:28,160 --> 00:05:32,160
+there are over 132 million wheelchair
+
+163
+00:05:31,520 --> 00:05:35,199
+users
+
+164
+00:05:32,160 --> 00:05:38,240
+across the globe smart wheelchairs
+
+165
+00:05:35,199 --> 00:05:40,320
+is an excellent innovation typically it
+
+166
+00:05:38,240 --> 00:05:43,120
+comes with built-in sensors
+
+167
+00:05:40,320 --> 00:05:44,160
+on the seats that collect data every
+
+168
+00:05:43,120 --> 00:05:46,320
+second
+
+169
+00:05:44,160 --> 00:05:48,400
+the data provides insight into the
+
+170
+00:05:46,320 --> 00:05:50,960
+seating behavior of the patient
+
+171
+00:05:48,400 --> 00:05:52,080
+and the energy required to maintain the
+
+172
+00:05:50,960 --> 00:05:54,800
+posture
+
+173
+00:05:52,080 --> 00:05:55,520
+other variations of smart wheelchairs
+
+174
+00:05:54,800 --> 00:05:58,639
+could include
+
+175
+00:05:55,520 --> 00:06:00,800
+fall detection these features allow
+
+176
+00:05:58,639 --> 00:06:02,560
+people to monitor the patient from a
+
+177
+00:06:00,800 --> 00:06:05,840
+remote location
+
+178
+00:06:02,560 --> 00:06:07,680
+and finally at number 10 we have smart
+
+179
+00:06:05,840 --> 00:06:10,240
+street light system
+
+180
+00:06:07,680 --> 00:06:11,120
+this iot based street light monitoring
+
+181
+00:06:10,240 --> 00:06:14,160
+system
+
+182
+00:06:11,120 --> 00:06:15,440
+not only monitors but also ensures low
+
+183
+00:06:14,160 --> 00:06:18,319
+power consumption
+
+184
+00:06:15,440 --> 00:06:20,560
+and detects faulty lights the street
+
+185
+00:06:18,319 --> 00:06:22,880
+lights have external sensing
+
+186
+00:06:20,560 --> 00:06:24,400
+that automatically turns on at the
+
+187
+00:06:22,880 --> 00:06:27,199
+desired intensity
+
+188
+00:06:24,400 --> 00:06:28,479
+based on the lighting needed control of
+
+189
+00:06:27,199 --> 00:06:30,720
+light intensity
+
+190
+00:06:28,479 --> 00:06:32,000
+is based on the movement of people or
+
+191
+00:06:30,720 --> 00:06:34,560
+vehicles
+
+192
+00:06:32,000 --> 00:06:36,000
+in case of an emergency the lights
+
+193
+00:06:34,560 --> 00:06:39,039
+increase the brightness
+
+194
+00:06:36,000 --> 00:06:41,680
+to maximum intensity thereby ensuring
+
+195
+00:06:39,039 --> 00:06:42,880
+safety when deployed as a part of a
+
+196
+00:06:41,680 --> 00:06:45,280
+smart city
+
+197
+00:06:42,880 --> 00:06:46,479
+the users can be informed about any
+
+198
+00:06:45,280 --> 00:06:48,800
+outages
+
+199
+00:06:46,479 --> 00:06:50,240
+they can also register a complaint for
+
+200
+00:06:48,800 --> 00:06:52,560
+immediate service
+
+201
+00:06:50,240 --> 00:06:53,280
+so with that we come to the end of the
+
+202
+00:06:52,560 --> 00:06:56,080
+list
+
+203
+00:06:53,280 --> 00:06:58,160
+if you have any interesting projects let
+
+204
+00:06:56,080 --> 00:07:00,880
+us know in the comment section
+
+205
+00:06:58,160 --> 00:07:02,319
+so with that we end this short video on
+
+206
+00:07:00,880 --> 00:07:04,319
+iot projects
+
+207
+00:07:02,319 --> 00:07:06,560
+thank you so much for being here and
+
+208
+00:07:04,319 --> 00:07:09,120
+watch out for more videos from us
+
+209
+00:07:06,560 --> 00:07:13,120
+until then keep learning and stay tuned
+
+210
+00:07:09,120 --> 00:07:13,120
+to simply learn

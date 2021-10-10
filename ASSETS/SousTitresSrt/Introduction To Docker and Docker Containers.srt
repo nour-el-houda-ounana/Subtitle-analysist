@@ -1,0 +1,927 @@
+1
+00:00:00,000 --> 00:00:02,939
+[Music]
+
+2
+00:00:04,279 --> 00:00:08,429
+what's up guys welcome to another video
+
+3
+00:00:06,600 --> 00:00:10,740
+brought to you by the simple engineer in
+
+4
+00:00:08,429 --> 00:00:13,769
+today's video we are going to dive into
+
+5
+00:00:10,740 --> 00:00:16,320
+docker and containers let's get right
+
+6
+00:00:13,769 --> 00:00:18,359
+into it so years ago before containers
+
+7
+00:00:16,320 --> 00:00:20,460
+were a thing we had big companies like
+
+8
+00:00:18,359 --> 00:00:22,199
+Walmart Target Chase Bank you name it
+
+9
+00:00:20,460 --> 00:00:23,820
+and they needed to make sure that their
+
+10
+00:00:22,199 --> 00:00:25,529
+business never went down because their
+
+11
+00:00:23,820 --> 00:00:27,210
+business was technology they relied on
+
+12
+00:00:25,529 --> 00:00:29,580
+it so what they would do is they would
+
+13
+00:00:27,210 --> 00:00:31,380
+go buy servers and then they would go
+
+14
+00:00:29,580 --> 00:00:33,660
+buy more servers and then that process
+
+15
+00:00:31,380 --> 00:00:35,640
+would rinse and repeat and they
+
+16
+00:00:33,660 --> 00:00:37,739
+basically would over allocate more than
+
+17
+00:00:35,640 --> 00:00:39,780
+they needed and the issue is that with
+
+18
+00:00:37,739 --> 00:00:42,300
+this was it was extremely extremely
+
+19
+00:00:39,780 --> 00:00:44,940
+expensive and they needed to do this
+
+20
+00:00:42,300 --> 00:00:46,200
+because as more and more users hit their
+
+21
+00:00:44,940 --> 00:00:48,149
+servers they wanted to make sure that
+
+22
+00:00:46,200 --> 00:00:49,590
+they could scale well and in the process
+
+23
+00:00:48,149 --> 00:00:52,079
+that they wouldn't be able to scale well
+
+24
+00:00:49,590 --> 00:00:53,489
+then their servers would basically crash
+
+25
+00:00:52,079 --> 00:00:55,739
+and burn and their business would be
+
+26
+00:00:53,489 --> 00:00:57,420
+dead so fast-forward a few years we have
+
+27
+00:00:55,739 --> 00:01:01,530
+a really cool company it comes out and
+
+28
+00:00:57,420 --> 00:01:04,129
+their name is VMware and VMware says we
+
+29
+00:01:01,530 --> 00:01:06,000
+have this thing to offer it's known as
+
+30
+00:01:04,129 --> 00:01:08,400
+virtualization and what you're going to
+
+31
+00:01:06,000 --> 00:01:10,020
+be able to do is instead of running your
+
+32
+00:01:08,400 --> 00:01:11,850
+application every time you want to run
+
+33
+00:01:10,020 --> 00:01:13,920
+your application you go buy a new server
+
+34
+00:01:11,850 --> 00:01:15,720
+that's really expensive we're gonna
+
+35
+00:01:13,920 --> 00:01:17,700
+allow you to run multiple operating
+
+36
+00:01:15,720 --> 00:01:19,920
+systems on the same host which
+
+37
+00:01:17,700 --> 00:01:22,799
+essentially means you can run your app
+
+38
+00:01:19,920 --> 00:01:25,619
+in isolation on the same server the same
+
+39
+00:01:22,799 --> 00:01:27,180
+infrastructure but the apps aren't gonna
+
+40
+00:01:25,619 --> 00:01:29,280
+know anything about each other so it's
+
+41
+00:01:27,180 --> 00:01:32,159
+like running an entirely separate
+
+42
+00:01:29,280 --> 00:01:34,740
+computer on the same computer and this
+
+43
+00:01:32,159 --> 00:01:36,720
+was a mind-blowing thing that was a
+
+44
+00:01:34,740 --> 00:01:38,340
+game-changer for the industry another
+
+45
+00:01:36,720 --> 00:01:39,840
+point this was this was a lot more
+
+46
+00:01:38,340 --> 00:01:42,180
+efficient because we could actually take
+
+47
+00:01:39,840 --> 00:01:44,040
+advantage of the resources that we had
+
+48
+00:01:42,180 --> 00:01:46,170
+purchased that were so expensive because
+
+49
+00:01:44,040 --> 00:01:48,899
+we could run more applications in
+
+50
+00:01:46,170 --> 00:01:50,610
+isolation within that bare metal server
+
+51
+00:01:48,899 --> 00:01:53,040
+environment this was really cool because
+
+52
+00:01:50,610 --> 00:01:56,430
+no like I had reiterated we're running
+
+53
+00:01:53,040 --> 00:01:59,399
+multiple apps at once but on the same
+
+54
+00:01:56,430 --> 00:02:00,509
+server and before if you wanted to make
+
+55
+00:01:59,399 --> 00:02:02,100
+sure that you didn't really have a
+
+56
+00:02:00,509 --> 00:02:04,229
+single point of failure for your
+
+57
+00:02:02,100 --> 00:02:06,530
+application you would place them on
+
+58
+00:02:04,229 --> 00:02:08,539
+different servers and then scale
+
+59
+00:02:06,530 --> 00:02:11,210
+horizontally in that fashion
+
+60
+00:02:08,539 --> 00:02:15,080
+unfortunately it's not all roses and
+
+61
+00:02:11,210 --> 00:02:17,660
+because virtualization is expensive to
+
+62
+00:02:15,080 --> 00:02:19,400
+begin we have multiple kernels for every
+
+63
+00:02:17,660 --> 00:02:21,770
+guest operating system that is going to
+
+64
+00:02:19,400 --> 00:02:23,900
+be running on the infrastructure it's
+
+65
+00:02:21,770 --> 00:02:25,880
+going to have a kernel inside of it and
+
+66
+00:02:23,900 --> 00:02:28,010
+in addition to that for every guest
+
+67
+00:02:25,880 --> 00:02:29,960
+operating system that we add into the
+
+68
+00:02:28,010 --> 00:02:31,790
+infrastructure we have to allocate
+
+69
+00:02:29,960 --> 00:02:33,890
+resources for it although we don't have
+
+70
+00:02:31,790 --> 00:02:35,840
+physical hardware we have virtual
+
+71
+00:02:33,890 --> 00:02:38,810
+hardware so those take up resources we
+
+72
+00:02:35,840 --> 00:02:40,730
+have guest operating system space we
+
+73
+00:02:38,810 --> 00:02:42,650
+have the RAM allocation that we have for
+
+74
+00:02:40,730 --> 00:02:44,900
+this operating system so it's just a lot
+
+75
+00:02:42,650 --> 00:02:47,480
+more expensive although we do get a lot
+
+76
+00:02:44,900 --> 00:02:49,700
+of benefits it's still not the best
+
+77
+00:02:47,480 --> 00:02:52,400
+thing out there so fast forward to
+
+78
+00:02:49,700 --> 00:02:54,950
+modern-day containerization we have a
+
+79
+00:02:52,400 --> 00:02:57,770
+fantastic technology it's known as
+
+80
+00:02:54,950 --> 00:03:00,260
+docker now docker is really great
+
+81
+00:02:57,770 --> 00:03:02,270
+because for one it's extremely
+
+82
+00:03:00,260 --> 00:03:05,450
+lightweight we don't have the issues of
+
+83
+00:03:02,270 --> 00:03:07,940
+having these crazy to configure virtual
+
+84
+00:03:05,450 --> 00:03:11,150
+machine images that are hard to set up
+
+85
+00:03:07,940 --> 00:03:13,550
+and hard to deploy docker is they work
+
+86
+00:03:11,150 --> 00:03:15,920
+off images and you can create containers
+
+87
+00:03:13,550 --> 00:03:18,380
+out of these images and it makes it
+
+88
+00:03:15,920 --> 00:03:20,420
+really really lightweight in addition to
+
+89
+00:03:18,380 --> 00:03:22,130
+that it's really portable you have these
+
+90
+00:03:20,420 --> 00:03:23,930
+images that are already really really
+
+91
+00:03:22,130 --> 00:03:26,090
+small basically these bare bone
+
+92
+00:03:23,930 --> 00:03:28,400
+distributions and you can use
+
+93
+00:03:26,090 --> 00:03:30,110
+configuration like docker files to
+
+94
+00:03:28,400 --> 00:03:32,990
+basically spin these things up
+
+95
+00:03:30,110 --> 00:03:36,110
+instantaneously on pretty much any
+
+96
+00:03:32,990 --> 00:03:39,260
+system next it is extremely extremely
+
+97
+00:03:36,110 --> 00:03:41,210
+fast before you'd have to boot up an
+
+98
+00:03:39,260 --> 00:03:42,980
+entire operating system just to get to
+
+99
+00:03:41,210 --> 00:03:44,900
+your application and then you'd have to
+
+100
+00:03:42,980 --> 00:03:47,240
+copy over all of the files which could
+
+101
+00:03:44,900 --> 00:03:48,800
+be a tedious process docker has all of
+
+102
+00:03:47,240 --> 00:03:51,860
+this stuff embedded in its configuration
+
+103
+00:03:48,800 --> 00:03:53,780
+management it starts up within seconds
+
+104
+00:03:51,860 --> 00:03:56,390
+and it's really really quick to use
+
+105
+00:03:53,780 --> 00:03:58,580
+right there in your host machine and one
+
+106
+00:03:56,390 --> 00:04:00,500
+of the biggest benefits that we see from
+
+107
+00:03:58,580 --> 00:04:02,540
+docker that sets it apart from something
+
+108
+00:04:00,500 --> 00:04:04,160
+like a virtual machine is there is no
+
+109
+00:04:02,540 --> 00:04:06,080
+hypervisor and we'll look at that in
+
+110
+00:04:04,160 --> 00:04:07,850
+more detail in a second but essentially
+
+111
+00:04:06,080 --> 00:04:10,610
+what that means is it doesn't have a
+
+112
+00:04:07,850 --> 00:04:14,150
+separate kernel it is still utilizing
+
+113
+00:04:10,610 --> 00:04:16,100
+the same resources as the host OS and it
+
+114
+00:04:14,150 --> 00:04:18,620
+basically exploits namespaces and
+
+115
+00:04:16,100 --> 00:04:20,170
+control groups too tightly use these
+
+116
+00:04:18,620 --> 00:04:21,970
+resources in a more
+
+117
+00:04:20,170 --> 00:04:24,430
+efficient way so now let us actually
+
+118
+00:04:21,970 --> 00:04:27,400
+compare and contrast virtualization
+
+119
+00:04:24,430 --> 00:04:30,160
+versus containerization when we're
+
+120
+00:04:27,400 --> 00:04:32,820
+looking at virtualization from a diagram
+
+121
+00:04:30,160 --> 00:04:35,110
+type view we know that it has
+
+122
+00:04:32,820 --> 00:04:37,270
+infrastructure infrastructure is going
+
+123
+00:04:35,110 --> 00:04:39,670
+to represent what your server is the
+
+124
+00:04:37,270 --> 00:04:42,010
+bare metal the host it could be your
+
+125
+00:04:39,670 --> 00:04:44,950
+laptop your desktop a high-end server
+
+126
+00:04:42,010 --> 00:04:46,030
+what-have-you on top of that we have the
+
+127
+00:04:44,950 --> 00:04:47,620
+operating system and the operating
+
+128
+00:04:46,030 --> 00:04:50,260
+system is going to be something like
+
+129
+00:04:47,620 --> 00:04:53,560
+Windows Server could be even your
+
+130
+00:04:50,260 --> 00:04:54,940
+personal laptop like Mac OS or some
+
+131
+00:04:53,560 --> 00:04:56,860
+Linux distribution
+
+132
+00:04:54,940 --> 00:04:59,440
+in virtualization we have something
+
+133
+00:04:56,860 --> 00:05:01,360
+known as a hypervisor and because we're
+
+134
+00:04:59,440 --> 00:05:04,120
+running these virtual machines which are
+
+135
+00:05:01,360 --> 00:05:06,310
+basically isolated desktop environments
+
+136
+00:05:04,120 --> 00:05:08,560
+inside of a file the hypervisor is
+
+137
+00:05:06,310 --> 00:05:10,690
+what's going to understand how to read
+
+138
+00:05:08,560 --> 00:05:13,000
+that file and this is what a virtual
+
+139
+00:05:10,690 --> 00:05:15,130
+machine images and common hypervisors
+
+140
+00:05:13,000 --> 00:05:17,440
+are things like VMware and VirtualBox
+
+141
+00:05:15,130 --> 00:05:19,390
+and they know how to interpret these
+
+142
+00:05:17,440 --> 00:05:22,720
+operating systems and then on top of
+
+143
+00:05:19,390 --> 00:05:25,210
+that we have the actual guest OS and
+
+144
+00:05:22,720 --> 00:05:27,250
+each one of these guest OS is has their
+
+145
+00:05:25,210 --> 00:05:29,320
+own kernel and this is where things
+
+146
+00:05:27,250 --> 00:05:31,450
+start to get a little bit expensive from
+
+147
+00:05:29,320 --> 00:05:33,490
+a resource allocation perspective and
+
+148
+00:05:31,450 --> 00:05:35,770
+then on top of the OS is where we would
+
+149
+00:05:33,490 --> 00:05:38,140
+actually install our binaries and our
+
+150
+00:05:35,770 --> 00:05:40,780
+libraries and then finally we could copy
+
+151
+00:05:38,140 --> 00:05:43,330
+over all of our files on to this
+
+152
+00:05:40,780 --> 00:05:45,670
+operating system that actually makes up
+
+153
+00:05:43,330 --> 00:05:49,080
+our application that we want to deploy
+
+154
+00:05:45,670 --> 00:05:51,370
+on the server now let's contrast this to
+
+155
+00:05:49,080 --> 00:05:53,350
+containerization containerization has
+
+156
+00:05:51,370 --> 00:05:54,790
+infrastructure of course things like
+
+157
+00:05:53,350 --> 00:05:56,920
+what we had just mentioned and in
+
+158
+00:05:54,790 --> 00:05:58,930
+addition to that it has the operating
+
+159
+00:05:56,920 --> 00:06:01,000
+system but what's different is it
+
+160
+00:05:58,930 --> 00:06:03,580
+doesn't actually have a hypervisor it
+
+161
+00:06:01,000 --> 00:06:05,500
+has a process that runs directly on the
+
+162
+00:06:03,580 --> 00:06:07,810
+operating system known as the docker
+
+163
+00:06:05,500 --> 00:06:10,330
+Damon and the docker daemon is what
+
+164
+00:06:07,810 --> 00:06:12,280
+facilitates and manages things like the
+
+165
+00:06:10,330 --> 00:06:14,080
+running containers on the system the
+
+166
+00:06:12,280 --> 00:06:15,910
+images that you create and all of the
+
+167
+00:06:14,080 --> 00:06:16,540
+command line utilities that come with
+
+168
+00:06:15,910 --> 00:06:19,300
+docker
+
+169
+00:06:16,540 --> 00:06:22,270
+the applications that we run within
+
+170
+00:06:19,300 --> 00:06:25,510
+these images basically run directly on
+
+171
+00:06:22,270 --> 00:06:27,790
+the exact host machine and what happens
+
+172
+00:06:25,510 --> 00:06:29,740
+is we create images which are like
+
+173
+00:06:27,790 --> 00:06:31,870
+copies of the application that we want
+
+174
+00:06:29,740 --> 00:06:32,650
+to distribute and a running instance of
+
+175
+00:06:31,870 --> 00:06:35,500
+an image is
+
+176
+00:06:32,650 --> 00:06:37,870
+what's known as a container and each
+
+177
+00:06:35,500 --> 00:06:39,820
+container has one process in a typically
+
+178
+00:06:37,870 --> 00:06:42,430
+our application what it does is it
+
+179
+00:06:39,820 --> 00:06:44,830
+actually segments utilizing things like
+
+180
+00:06:42,430 --> 00:06:47,199
+name spacing and control groups to
+
+181
+00:06:44,830 --> 00:06:49,060
+piggyback off the resources directly on
+
+182
+00:06:47,199 --> 00:06:51,580
+the host machine so we're using the same
+
+183
+00:06:49,060 --> 00:06:54,669
+kernel but we're using namespaces to say
+
+184
+00:06:51,580 --> 00:06:56,590
+hey this is the segment of the system
+
+185
+00:06:54,669 --> 00:06:58,539
+that you can have and control groups
+
+186
+00:06:56,590 --> 00:07:00,639
+will say this is how much of that thing
+
+187
+00:06:58,539 --> 00:07:02,199
+that you can have this is how much RAM
+
+188
+00:07:00,639 --> 00:07:04,330
+you can have this is how much network
+
+189
+00:07:02,199 --> 00:07:07,120
+bandwidth you are allocated and that is
+
+190
+00:07:04,330 --> 00:07:09,220
+how docker exploits the operating system
+
+191
+00:07:07,120 --> 00:07:10,840
+that it runs on without needing a
+
+192
+00:07:09,220 --> 00:07:13,720
+hypervisor so it's really beneficial
+
+193
+00:07:10,840 --> 00:07:15,850
+because we are on the same host we can
+
+194
+00:07:13,720 --> 00:07:18,550
+more tightly couple ourselves to the
+
+195
+00:07:15,850 --> 00:07:20,350
+resources of the operating system and
+
+196
+00:07:18,550 --> 00:07:22,270
+the system that we're running on and on
+
+197
+00:07:20,350 --> 00:07:24,460
+top of all of that it's just a lot
+
+198
+00:07:22,270 --> 00:07:25,930
+faster and it's a lot more portable so
+
+199
+00:07:24,460 --> 00:07:27,639
+that's why a lot of people are
+
+200
+00:07:25,930 --> 00:07:30,310
+preferring docker over the traditional
+
+201
+00:07:27,639 --> 00:07:33,340
+virtual machine I want to touch on just
+
+202
+00:07:30,310 --> 00:07:36,099
+a few more points and the main one is we
+
+203
+00:07:33,340 --> 00:07:38,260
+fix the problem using docker when people
+
+204
+00:07:36,099 --> 00:07:38,919
+say it works on my computer but not
+
+205
+00:07:38,260 --> 00:07:40,780
+theirs
+
+206
+00:07:38,919 --> 00:07:43,449
+this problem goes away and this is
+
+207
+00:07:40,780 --> 00:07:47,110
+because we packaged a working running
+
+208
+00:07:43,449 --> 00:07:48,880
+instance of our application inside of an
+
+209
+00:07:47,110 --> 00:07:50,949
+image and then that's the thing that
+
+210
+00:07:48,880 --> 00:07:52,840
+gets deployed so there's never any of
+
+211
+00:07:50,949 --> 00:07:54,280
+this hey it works on my machine but it
+
+212
+00:07:52,840 --> 00:07:56,650
+doesn't work on their machine docker
+
+213
+00:07:54,280 --> 00:07:58,659
+resolves that issue in addition to this
+
+214
+00:07:56,650 --> 00:08:00,190
+we have better dependency management
+
+215
+00:07:58,659 --> 00:08:02,050
+typically you have your dependencies
+
+216
+00:08:00,190 --> 00:08:04,030
+scattered all across your application
+
+217
+00:08:02,050 --> 00:08:06,610
+and then deploying it on another server
+
+218
+00:08:04,030 --> 00:08:09,220
+is a very time-consuming tedious process
+
+219
+00:08:06,610 --> 00:08:11,470
+but within docker we bake all of our
+
+220
+00:08:09,220 --> 00:08:13,750
+dependencies into the image directly so
+
+221
+00:08:11,470 --> 00:08:15,280
+it makes it a lot easier to manage all
+
+222
+00:08:13,750 --> 00:08:17,409
+of those dependencies and then of course
+
+223
+00:08:15,280 --> 00:08:19,419
+the main thing that we've reiterated in
+
+224
+00:08:17,409 --> 00:08:21,820
+multiple times in this video is it is a
+
+225
+00:08:19,419 --> 00:08:24,159
+lot more lightweight than something like
+
+226
+00:08:21,820 --> 00:08:26,470
+a typical virtual machine and that's a
+
+227
+00:08:24,159 --> 00:08:28,330
+huge benefit when trying to quickly or
+
+228
+00:08:26,470 --> 00:08:30,639
+Zonta lea and vertically scale your
+
+229
+00:08:28,330 --> 00:08:32,740
+applications and that does it for this
+
+230
+00:08:30,639 --> 00:08:35,050
+video stay tuned for the rest of the
+
+231
+00:08:32,740 --> 00:08:38,940
+videos in this series and don't forget
+
+232
+00:08:35,050 --> 00:08:38,940
+to like comment and subscribe thanks

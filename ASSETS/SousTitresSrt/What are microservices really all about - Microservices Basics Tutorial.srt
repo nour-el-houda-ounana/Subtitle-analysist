@@ -1,0 +1,1559 @@
+1
+00:00:00,000 --> 00:00:03,449
+there's a lot of buzz about
+
+2
+00:00:01,110 --> 00:00:05,279
+micro-services these days everybody
+
+3
+00:00:03,449 --> 00:00:07,529
+wants to create applications using the
+
+4
+00:00:05,279 --> 00:00:09,750
+micro service architecture in this video
+
+5
+00:00:07,529 --> 00:00:12,179
+let's look at what micro services are
+
+6
+00:00:09,750 --> 00:00:13,830
+really all about but rather than reading
+
+7
+00:00:12,179 --> 00:00:15,540
+out a like a list of architectural
+
+8
+00:00:13,830 --> 00:00:18,660
+concepts we will approach this from a
+
+9
+00:00:15,540 --> 00:00:21,810
+completely different place by me telling
+
+10
+00:00:18,660 --> 00:00:32,129
+you a story that you really need to know
+
+11
+00:00:21,810 --> 00:00:32,129
+[Music]
+
+12
+00:00:34,310 --> 00:00:39,930
+let's go back in time to the old days
+
+13
+00:00:37,440 --> 00:00:42,840
+when we didn't have anything called
+
+14
+00:00:39,930 --> 00:00:45,480
+microservices in fact we'll go so far
+
+15
+00:00:42,840 --> 00:00:48,360
+back he'll go to a time when a computer
+
+16
+00:00:45,480 --> 00:00:49,710
+was big enough to fill the room must
+
+17
+00:00:48,360 --> 00:00:51,540
+have seen pictures of one of these
+
+18
+00:00:49,710 --> 00:00:53,070
+things you would walk up to that
+
+19
+00:00:51,540 --> 00:00:55,680
+computer you would give it all the
+
+20
+00:00:53,070 --> 00:00:57,830
+instructions it needs to compute then it
+
+21
+00:00:55,680 --> 00:01:01,500
+would take it and it would execute it
+
+22
+00:00:57,830 --> 00:01:04,500
+all right fast forward a little bit to
+
+23
+00:01:01,500 --> 00:01:06,810
+desktop machines again programs resided
+
+24
+00:01:04,500 --> 00:01:08,880
+on the desktop machine the programmer
+
+25
+00:01:06,810 --> 00:01:11,130
+application contains all the
+
+26
+00:01:08,880 --> 00:01:13,710
+instructions that are needed to execute
+
+27
+00:01:11,130 --> 00:01:15,540
+so when people would write applications
+
+28
+00:01:13,710 --> 00:01:17,040
+for it their code would be compiled down
+
+29
+00:01:15,540 --> 00:01:19,920
+and the whole thing would be installed
+
+30
+00:01:17,040 --> 00:01:22,320
+on the computer in one go and it's been
+
+31
+00:01:19,920 --> 00:01:25,140
+stalled on the same computer think of
+
+32
+00:01:22,320 --> 00:01:28,020
+purely desktop only apps okay something
+
+33
+00:01:25,140 --> 00:01:30,920
+like Microsoft Word or a text editor
+
+34
+00:01:28,020 --> 00:01:34,440
+that you install on your machine this
+
+35
+00:01:30,920 --> 00:01:36,270
+has historically influenced how we write
+
+36
+00:01:34,440 --> 00:01:38,280
+code when we need to write an
+
+37
+00:01:36,270 --> 00:01:40,590
+application we would start a new code
+
+38
+00:01:38,280 --> 00:01:42,750
+project and we would add functionality
+
+39
+00:01:40,590 --> 00:01:45,360
+into that project need more
+
+40
+00:01:42,750 --> 00:01:47,069
+functionality add more code and so the
+
+41
+00:01:45,360 --> 00:01:49,679
+size of the code base for any given
+
+42
+00:01:47,069 --> 00:01:52,770
+application keeps increasing over time
+
+43
+00:01:49,679 --> 00:01:54,660
+so what starts as a small codebase might
+
+44
+00:01:52,770 --> 00:01:57,270
+end up turning into a large complex
+
+45
+00:01:54,660 --> 00:01:59,280
+codebase over time and people realize
+
+46
+00:01:57,270 --> 00:02:01,590
+this there were best practices that were
+
+47
+00:01:59,280 --> 00:02:03,660
+created to handle large projects
+
+48
+00:02:01,590 --> 00:02:05,819
+developers were recommended to break
+
+49
+00:02:03,660 --> 00:02:07,830
+things up into modules so rather than
+
+50
+00:02:05,819 --> 00:02:10,110
+put all your code into a single mess of
+
+51
+00:02:07,830 --> 00:02:11,880
+a codebase create smaller modules and
+
+52
+00:02:10,110 --> 00:02:14,730
+compose your application from these
+
+53
+00:02:11,880 --> 00:02:16,380
+modules small independent parts that
+
+54
+00:02:14,730 --> 00:02:18,420
+were focused on just doing a small
+
+55
+00:02:16,380 --> 00:02:21,030
+amount of functionality these modules
+
+56
+00:02:18,420 --> 00:02:24,510
+were supposed to be reusable so a simple
+
+57
+00:02:21,030 --> 00:02:27,390
+module could be added to another project
+
+58
+00:02:24,510 --> 00:02:29,400
+to help another application see isn't
+
+59
+00:02:27,390 --> 00:02:31,020
+this awesome and then once you've
+
+60
+00:02:29,400 --> 00:02:32,400
+created your application this way you're
+
+61
+00:02:31,020 --> 00:02:35,069
+ready to build this whole application
+
+62
+00:02:32,400 --> 00:02:38,390
+and deploy this on the machine that runs
+
+63
+00:02:35,069 --> 00:02:40,860
+your application notice something here
+
+64
+00:02:38,390 --> 00:02:43,409
+when coding your application you have
+
+65
+00:02:40,860 --> 00:02:46,200
+all these modular constructs right nice
+
+66
+00:02:43,409 --> 00:02:47,319
+fragmented organized pieces of
+
+67
+00:02:46,200 --> 00:02:49,269
+functionality pieces
+
+68
+00:02:47,319 --> 00:02:51,879
+code that composed together to form your
+
+69
+00:02:49,269 --> 00:02:53,799
+application but still what you're doing
+
+70
+00:02:51,879 --> 00:02:55,840
+is composing them to form one
+
+71
+00:02:53,799 --> 00:02:58,659
+application and when you build it and
+
+72
+00:02:55,840 --> 00:03:00,849
+apply it all those small pieces all get
+
+73
+00:02:58,659 --> 00:03:02,530
+smushed together into one giant ball of
+
+74
+00:03:00,849 --> 00:03:04,959
+distributable that is your final
+
+75
+00:03:02,530 --> 00:03:07,239
+application build and that's what you'd
+
+76
+00:03:04,959 --> 00:03:09,370
+apply to a machine again take the
+
+77
+00:03:07,239 --> 00:03:11,620
+example of your text editor installer or
+
+78
+00:03:09,370 --> 00:03:13,930
+Microsoft Word installer no matter how
+
+79
+00:03:11,620 --> 00:03:16,180
+the developers of that application have
+
+80
+00:03:13,930 --> 00:03:18,909
+modularized and organized their source
+
+81
+00:03:16,180 --> 00:03:21,159
+code the final distributable the final
+
+82
+00:03:18,909 --> 00:03:23,170
+executable is just one thing but
+
+83
+00:03:21,159 --> 00:03:24,700
+everything's mush together this is
+
+84
+00:03:23,170 --> 00:03:27,459
+important to remember okay remember this
+
+85
+00:03:24,700 --> 00:03:29,319
+picture nice fancy modularized organized
+
+86
+00:03:27,459 --> 00:03:31,930
+structure of the code but one
+
+87
+00:03:29,319 --> 00:03:34,750
+application so the final deployed entity
+
+88
+00:03:31,930 --> 00:03:36,129
+smushed because nobody cares how the
+
+89
+00:03:34,750 --> 00:03:38,169
+application looks on the user's machine
+
+90
+00:03:36,129 --> 00:03:41,919
+right and everything needs to be
+
+91
+00:03:38,169 --> 00:03:43,870
+deployed on to one machine anyway this
+
+92
+00:03:41,919 --> 00:03:45,459
+used to work for the most part for
+
+93
+00:03:43,870 --> 00:03:47,169
+desktop applications people would
+
+94
+00:03:45,459 --> 00:03:50,889
+happily develop and deploy applications
+
+95
+00:03:47,169 --> 00:03:52,599
+this way and then and then there came
+
+96
+00:03:50,889 --> 00:03:54,879
+along two things that would
+
+97
+00:03:52,599 --> 00:03:56,919
+revolutionize and maybe even associate
+
+98
+00:03:54,879 --> 00:03:59,250
+some changes to the way we build
+
+99
+00:03:56,919 --> 00:04:03,040
+applications what were those two things
+
+100
+00:03:59,250 --> 00:04:04,629
+first was the onset of web applications
+
+101
+00:04:03,040 --> 00:04:06,639
+people started to move away from
+
+102
+00:04:04,629 --> 00:04:08,709
+applications that needed to be installed
+
+103
+00:04:06,639 --> 00:04:10,389
+on the machine and towards web
+
+104
+00:04:08,709 --> 00:04:12,609
+applications that would be installed on
+
+105
+00:04:10,389 --> 00:04:14,769
+a remote server machine somewhere on the
+
+106
+00:04:12,609 --> 00:04:18,370
+internet and then you from your machine
+
+107
+00:04:14,769 --> 00:04:20,380
+can use your web browser to access the
+
+108
+00:04:18,370 --> 00:04:22,199
+result off that execution on the remote
+
+109
+00:04:20,380 --> 00:04:25,330
+machine think server-side applications
+
+110
+00:04:22,199 --> 00:04:27,360
+the server would prepare the HTML that
+
+111
+00:04:25,330 --> 00:04:29,919
+your web application needs to show and
+
+112
+00:04:27,360 --> 00:04:31,750
+no applications are actually deployed on
+
+113
+00:04:29,919 --> 00:04:35,949
+your machine but from your browser
+
+114
+00:04:31,750 --> 00:04:37,960
+perhaps you just use your browser the
+
+115
+00:04:35,949 --> 00:04:40,630
+actual application would be deployed on
+
+116
+00:04:37,960 --> 00:04:43,120
+the server somewhere and your requests
+
+117
+00:04:40,630 --> 00:04:44,650
+go to that thing and that process is it
+
+118
+00:04:43,120 --> 00:04:47,139
+does whatever it needs to do and then
+
+119
+00:04:44,650 --> 00:04:50,080
+returns back a response now you might
+
+120
+00:04:47,139 --> 00:04:52,509
+ask me how does this change things well
+
+121
+00:04:50,080 --> 00:04:54,970
+for the most part nothing much changed
+
+122
+00:04:52,509 --> 00:04:57,340
+initially the only change was instead of
+
+123
+00:04:54,970 --> 00:04:58,779
+developers installing their applications
+
+124
+00:04:57,340 --> 00:05:01,070
+and all the different users machines
+
+125
+00:04:58,779 --> 00:05:03,560
+they would install them on just one
+
+126
+00:05:01,070 --> 00:05:05,570
+server and all the users who just point
+
+127
+00:05:03,560 --> 00:05:07,280
+to that seven access that server this
+
+128
+00:05:05,570 --> 00:05:09,530
+was awesome right everybody gets
+
+129
+00:05:07,280 --> 00:05:12,050
+automatic updates very cool
+
+130
+00:05:09,530 --> 00:05:14,870
+but then the core and the deployment
+
+131
+00:05:12,050 --> 00:05:16,970
+model was still the same nice fancy
+
+132
+00:05:14,870 --> 00:05:19,430
+modularized organized structure of the
+
+133
+00:05:16,970 --> 00:05:21,140
+core but all that composes to just one
+
+134
+00:05:19,430 --> 00:05:24,140
+application and the final deployed
+
+135
+00:05:21,140 --> 00:05:25,850
+entity smushed rather than deploying the
+
+136
+00:05:24,140 --> 00:05:28,130
+smush on the user's machine they without
+
+137
+00:05:25,850 --> 00:05:31,130
+deploying that smush in one place on the
+
+138
+00:05:28,130 --> 00:05:33,200
+server then at some point of time due to
+
+139
+00:05:31,130 --> 00:05:35,750
+various different reasons some people
+
+140
+00:05:33,200 --> 00:05:39,800
+started wondering hmm there must be a
+
+141
+00:05:35,750 --> 00:05:41,450
+better way but wait let's pause the
+
+142
+00:05:39,800 --> 00:05:43,280
+story for a bit and let's look at one
+
+143
+00:05:41,450 --> 00:05:45,620
+other development that's been happening
+
+144
+00:05:43,280 --> 00:05:48,530
+to applications over the years
+
+145
+00:05:45,620 --> 00:05:51,140
+turns out web apps have been growing
+
+146
+00:05:48,530 --> 00:05:53,900
+very very incredibly very complicated
+
+147
+00:05:51,140 --> 00:05:55,310
+over time the first web applications
+
+148
+00:05:53,900 --> 00:05:56,720
+from the past did very simple
+
+149
+00:05:55,310 --> 00:05:58,250
+rudimentary things I don't know like to
+
+150
+00:05:56,720 --> 00:06:01,190
+tell you the time or something nothing
+
+151
+00:05:58,250 --> 00:06:03,640
+too fancy but over time web applications
+
+152
+00:06:01,190 --> 00:06:07,490
+have started becoming better bigger
+
+153
+00:06:03,640 --> 00:06:09,740
+quicker more complicated bigger scale
+
+154
+00:06:07,490 --> 00:06:12,530
+bigger user base bigger everything and
+
+155
+00:06:09,740 --> 00:06:14,480
+today we have web applications that can
+
+156
+00:06:12,530 --> 00:06:16,570
+you know find something from the whole
+
+157
+00:06:14,480 --> 00:06:19,220
+Internet in a matter of milliseconds or
+
+158
+00:06:16,570 --> 00:06:22,490
+find what cabs are available around you
+
+159
+00:06:19,220 --> 00:06:24,800
+all over the world in milliseconds these
+
+160
+00:06:22,490 --> 00:06:26,450
+are incredible feats if you think about
+
+161
+00:06:24,800 --> 00:06:29,420
+it and they need incredibly complicated
+
+162
+00:06:26,450 --> 00:06:31,580
+code to be developed and applied and
+
+163
+00:06:29,420 --> 00:06:35,420
+this complexity becomes harder and
+
+164
+00:06:31,580 --> 00:06:37,400
+harder to maintain hang on we have nice
+
+165
+00:06:35,420 --> 00:06:39,140
+modular architecture on the code side of
+
+166
+00:06:37,400 --> 00:06:41,390
+things isn't that enough to handle the
+
+167
+00:06:39,140 --> 00:06:42,770
+complexity during development time who
+
+168
+00:06:41,390 --> 00:06:46,640
+cares about how the application is
+
+169
+00:06:42,770 --> 00:06:48,230
+deployed right well with the type of
+
+170
+00:06:46,640 --> 00:06:50,240
+applications we are talking about the
+
+171
+00:06:48,230 --> 00:06:51,800
+complexity needs to be handled not just
+
+172
+00:06:50,240 --> 00:06:53,540
+at the coding side of things they also
+
+173
+00:06:51,800 --> 00:06:55,040
+need to be handled at the runtime or
+
+174
+00:06:53,540 --> 00:06:57,590
+execution side of things
+
+175
+00:06:55,040 --> 00:06:59,930
+having a single thing that you'd apply
+
+176
+00:06:57,590 --> 00:07:02,540
+didn't work any more this way of having
+
+177
+00:06:59,930 --> 00:07:04,490
+a single application was called the
+
+178
+00:07:02,540 --> 00:07:07,460
+monolithic application or monolithic
+
+179
+00:07:04,490 --> 00:07:10,520
+architecture mono means single lytic
+
+180
+00:07:07,460 --> 00:07:13,380
+means stone the single stone monolithic
+
+181
+00:07:10,520 --> 00:07:15,450
+this is the smush basically
+
+182
+00:07:13,380 --> 00:07:18,540
+what are some of the disadvantages of
+
+183
+00:07:15,450 --> 00:07:20,670
+this monolithic model first the bigger
+
+184
+00:07:18,540 --> 00:07:22,680
+the deployment the more challenging the
+
+185
+00:07:20,670 --> 00:07:24,390
+deployment let me give you an example
+
+186
+00:07:22,680 --> 00:07:26,700
+let's say you want to push a new feature
+
+187
+00:07:24,390 --> 00:07:28,860
+to your big monolithic application
+
+188
+00:07:26,700 --> 00:07:30,720
+alright so among all the code comets
+
+189
+00:07:28,860 --> 00:07:33,480
+that you want to apply is the single
+
+190
+00:07:30,720 --> 00:07:36,300
+code comment by this new guy the company
+
+191
+00:07:33,480 --> 00:07:38,520
+has just hired me not so sure about him
+
+192
+00:07:36,300 --> 00:07:41,400
+he probably doesn't know much and he's
+
+193
+00:07:38,520 --> 00:07:44,220
+still learning but his first code commit
+
+194
+00:07:41,400 --> 00:07:47,130
+ever is just sitting there and you're
+
+195
+00:07:44,220 --> 00:07:48,510
+worried what do you do well you need to
+
+196
+00:07:47,130 --> 00:07:50,790
+test the whole thing before you deploy
+
+197
+00:07:48,510 --> 00:07:53,220
+the whole application you never know
+
+198
+00:07:50,790 --> 00:07:55,350
+which part of the application that
+
+199
+00:07:53,220 --> 00:07:56,820
+commit might have broken well I'm
+
+200
+00:07:55,350 --> 00:07:59,340
+exaggerating here of course but the fact
+
+201
+00:07:56,820 --> 00:08:01,230
+remains since everything since the whole
+
+202
+00:07:59,340 --> 00:08:03,360
+application is being deployed every time
+
+203
+00:08:01,230 --> 00:08:05,700
+you need to test the whole application
+
+204
+00:08:03,360 --> 00:08:07,770
+every time you'd apply because anything
+
+205
+00:08:05,700 --> 00:08:09,600
+in it could have a bug introduced and
+
+206
+00:08:07,770 --> 00:08:12,780
+yeah you have automated tests and all
+
+207
+00:08:09,600 --> 00:08:14,330
+that jazz but it has a problem second
+
+208
+00:08:12,780 --> 00:08:18,150
+problem with monolithic architectures
+
+209
+00:08:14,330 --> 00:08:20,340
+scalability here is an example online
+
+210
+00:08:18,150 --> 00:08:22,050
+e-commerce sites they have very
+
+211
+00:08:20,340 --> 00:08:23,190
+unpredictable traffic spikes right so
+
+212
+00:08:22,050 --> 00:08:25,080
+let's say there is a sale on some
+
+213
+00:08:23,190 --> 00:08:27,540
+product people rush to the site like
+
+214
+00:08:25,080 --> 00:08:29,190
+crazy and after the sale is over the
+
+215
+00:08:27,540 --> 00:08:31,590
+traffic slows down similarly during
+
+216
+00:08:29,190 --> 00:08:34,469
+holidays there is a spike and there is a
+
+217
+00:08:31,590 --> 00:08:36,750
+dip thankfully these days we have
+
+218
+00:08:34,469 --> 00:08:38,849
+elastic servers so when the traffic
+
+219
+00:08:36,750 --> 00:08:41,010
+spikes up the number of application
+
+220
+00:08:38,849 --> 00:08:42,719
+server instances are increased but then
+
+221
+00:08:41,010 --> 00:08:45,030
+when the traffic goes back to normal the
+
+222
+00:08:42,719 --> 00:08:48,420
+extra servers are retired that's great
+
+223
+00:08:45,030 --> 00:08:50,820
+but imagine an entire ecommerce website
+
+224
+00:08:48,420 --> 00:08:53,400
+deployed as a single monolith this
+
+225
+00:08:50,820 --> 00:08:55,410
+monolith has shopping functionality user
+
+226
+00:08:53,400 --> 00:08:57,510
+profile the returns functionality a
+
+227
+00:08:55,410 --> 00:08:59,940
+whole lot of other stuff let's say
+
+228
+00:08:57,510 --> 00:09:02,730
+there's a traffic spike on the Shopping
+
+229
+00:08:59,940 --> 00:09:04,410
+pages when the server scale up notice
+
+230
+00:09:02,730 --> 00:09:06,300
+that all the other functionalities
+
+231
+00:09:04,410 --> 00:09:08,400
+should scale up as well even though
+
+232
+00:09:06,300 --> 00:09:09,900
+nobody's using them they have to scale
+
+233
+00:09:08,400 --> 00:09:13,050
+up because the whole thing is just one
+
+234
+00:09:09,900 --> 00:09:15,510
+single application so a big ecommerce
+
+235
+00:09:13,050 --> 00:09:17,280
+site has to be a lot more money to
+
+236
+00:09:15,510 --> 00:09:19,440
+create these duplicate instances of the
+
+237
+00:09:17,280 --> 00:09:21,360
+whole application then only a small
+
+238
+00:09:19,440 --> 00:09:23,310
+portion of the app actually needs to be
+
+239
+00:09:21,360 --> 00:09:25,710
+scaled up during the time of those
+
+240
+00:09:23,310 --> 00:09:27,180
+spikes there are a few other challenges
+
+241
+00:09:25,710 --> 00:09:29,279
+but I won't go into all of them now
+
+242
+00:09:27,180 --> 00:09:30,839
+let's go back to the story - that one
+
+243
+00:09:29,279 --> 00:09:33,930
+guy who said hmm there must be a better
+
+244
+00:09:30,839 --> 00:09:36,540
+way so the idea is like this back when
+
+245
+00:09:33,930 --> 00:09:40,080
+we were deploying to desktop machines we
+
+246
+00:09:36,540 --> 00:09:43,170
+had to install the whole app on a single
+
+247
+00:09:40,080 --> 00:09:45,870
+machine we didn't have a choice but wait
+
+248
+00:09:43,170 --> 00:09:47,880
+now we have web applications the
+
+249
+00:09:45,870 --> 00:09:50,550
+applications actually decide on a server
+
+250
+00:09:47,880 --> 00:09:53,430
+the user was sitting at home on their
+
+251
+00:09:50,550 --> 00:09:55,200
+computer or phone they don't care where
+
+252
+00:09:53,430 --> 00:09:56,640
+your application is or have you deployed
+
+253
+00:09:55,200 --> 00:09:58,560
+or have you executed
+
+254
+00:09:56,640 --> 00:10:01,230
+they just need one main entry point
+
+255
+00:09:58,560 --> 00:10:03,600
+application to talk to and from there on
+
+256
+00:10:01,230 --> 00:10:06,089
+you can run a single application on one
+
+257
+00:10:03,600 --> 00:10:07,850
+machine or ten applications on ten
+
+258
+00:10:06,089 --> 00:10:12,029
+machines nobody cares
+
+259
+00:10:07,850 --> 00:10:14,070
+so here's an idea rather than have the
+
+260
+00:10:12,029 --> 00:10:16,610
+whole application smushed into one
+
+261
+00:10:14,070 --> 00:10:18,839
+monolith and deployed into one machine
+
+262
+00:10:16,610 --> 00:10:21,600
+why not split the application into
+
+263
+00:10:18,839 --> 00:10:23,400
+smaller mini applications then you can
+
+264
+00:10:21,600 --> 00:10:26,220
+deploy these mini applications on
+
+265
+00:10:23,400 --> 00:10:28,320
+different machines you can have them
+
+266
+00:10:26,220 --> 00:10:31,250
+talk to each other over the network and
+
+267
+00:10:28,320 --> 00:10:34,740
+together work as the bigger application
+
+268
+00:10:31,250 --> 00:10:36,000
+take for example the e-commerce site you
+
+269
+00:10:34,740 --> 00:10:37,980
+could create a shopping catalogue
+
+270
+00:10:36,000 --> 00:10:39,420
+application that just has the shopping
+
+271
+00:10:37,980 --> 00:10:42,029
+catalog functionality and you deployed
+
+272
+00:10:39,420 --> 00:10:44,760
+on a separate server your order
+
+273
+00:10:42,029 --> 00:10:46,650
+processing done another server use a
+
+274
+00:10:44,760 --> 00:10:49,589
+profile application on another server
+
+275
+00:10:46,650 --> 00:10:51,360
+and let's say when the user wants to see
+
+276
+00:10:49,589 --> 00:10:53,160
+the shopping catalog the view
+
+277
+00:10:51,360 --> 00:10:55,650
+application which is another application
+
+278
+00:10:53,160 --> 00:10:58,830
+makes a REST API call to the catalog
+
+279
+00:10:55,650 --> 00:11:01,200
+applications API and say hey give me the
+
+280
+00:10:58,830 --> 00:11:02,550
+list of products to show and the API
+
+281
+00:11:01,200 --> 00:11:05,160
+returns the list and then the view
+
+282
+00:11:02,550 --> 00:11:07,830
+application returns an HTML for that
+
+283
+00:11:05,160 --> 00:11:09,810
+list so these many applications talk to
+
+284
+00:11:07,830 --> 00:11:12,240
+each other over the network by calling
+
+285
+00:11:09,810 --> 00:11:14,820
+each other's REST API to get whatever
+
+286
+00:11:12,240 --> 00:11:17,880
+they want from each other okay well how
+
+287
+00:11:14,820 --> 00:11:20,160
+would this help first the risk of
+
+288
+00:11:17,880 --> 00:11:21,959
+deployment is eased making a change to
+
+289
+00:11:20,160 --> 00:11:23,580
+the shopping catalog application well
+
+290
+00:11:21,959 --> 00:11:26,250
+it's a separate application you can test
+
+291
+00:11:23,580 --> 00:11:27,720
+and apply just that you don't have to
+
+292
+00:11:26,250 --> 00:11:31,290
+test and apply the rest of the
+
+293
+00:11:27,720 --> 00:11:33,570
+application secondly scaling no problem
+
+294
+00:11:31,290 --> 00:11:35,130
+during the holidays you scale up only
+
+295
+00:11:33,570 --> 00:11:37,589
+the shopping catalog application you'll
+
+296
+00:11:35,130 --> 00:11:40,250
+be creating more seven senses only for
+
+297
+00:11:37,589 --> 00:11:42,740
+the many applications that you need
+
+298
+00:11:40,250 --> 00:11:45,500
+so these mini applications our services
+
+299
+00:11:42,740 --> 00:11:48,920
+are what are technically called micro
+
+300
+00:11:45,500 --> 00:11:51,050
+services micro services are a way of
+
+301
+00:11:48,920 --> 00:11:53,870
+breaking your application or service
+
+302
+00:11:51,050 --> 00:11:55,960
+down into standalone independent
+
+303
+00:11:53,870 --> 00:11:58,730
+applications that can be run on
+
+304
+00:11:55,960 --> 00:12:02,180
+different hardware or server instances
+
+305
+00:11:58,730 --> 00:12:04,820
+they all talk to each other over a REST
+
+306
+00:12:02,180 --> 00:12:06,350
+API and work together to provide the
+
+307
+00:12:04,820 --> 00:12:08,120
+functionality of your application or
+
+308
+00:12:06,350 --> 00:12:09,470
+product so all that finds the
+
+309
+00:12:08,120 --> 00:12:11,660
+organization that you've been making to
+
+310
+00:12:09,470 --> 00:12:13,970
+the code during development time well
+
+311
+00:12:11,660 --> 00:12:15,710
+you can have fancy organized separation
+
+312
+00:12:13,970 --> 00:12:18,470
+of concerns for your applications in
+
+313
+00:12:15,710 --> 00:12:20,720
+their deployed state as well so you no
+
+314
+00:12:18,470 --> 00:12:23,210
+longer have one application to build and
+
+315
+00:12:20,720 --> 00:12:24,890
+apply you have several individual
+
+316
+00:12:23,210 --> 00:12:27,620
+applications that I'll do like a small
+
+317
+00:12:24,890 --> 00:12:30,020
+thing each but they work together work
+
+318
+00:12:27,620 --> 00:12:31,970
+with each other at runtime to form your
+
+319
+00:12:30,020 --> 00:12:34,700
+actual complete application as far as
+
+320
+00:12:31,970 --> 00:12:36,350
+your users are concerned now what are
+
+321
+00:12:34,700 --> 00:12:38,000
+the advantages of micro services we've
+
+322
+00:12:36,350 --> 00:12:40,250
+covered this you have flexibility
+
+323
+00:12:38,000 --> 00:12:42,380
+different teams can create and apply
+
+324
+00:12:40,250 --> 00:12:44,510
+micro services independently they can
+
+325
+00:12:42,380 --> 00:12:45,860
+put them on different servers or even
+
+326
+00:12:44,510 --> 00:12:48,260
+build them in different languages or
+
+327
+00:12:45,860 --> 00:12:50,390
+platforms these micro services talk to
+
+328
+00:12:48,260 --> 00:12:51,770
+each other through rest so it really
+
+329
+00:12:50,390 --> 00:12:54,260
+doesn't matter what language you
+
+330
+00:12:51,770 --> 00:12:57,200
+actually use you no longer have to use a
+
+331
+00:12:54,260 --> 00:13:00,080
+common language or platform what else
+
+332
+00:12:57,200 --> 00:13:02,330
+they can be scaled separately during the
+
+333
+00:13:00,080 --> 00:13:04,700
+shopping traffic spikes just scale
+
+334
+00:13:02,330 --> 00:13:06,500
+whatever micro services are most used
+
+335
+00:13:04,700 --> 00:13:08,630
+the other micro services are unaffected
+
+336
+00:13:06,500 --> 00:13:10,430
+there are many more advantages of course
+
+337
+00:13:08,630 --> 00:13:12,230
+but you also have to realize this opens
+
+338
+00:13:10,430 --> 00:13:14,030
+up a whole lot of questions for all the
+
+339
+00:13:12,230 --> 00:13:15,950
+advantages that that micro services have
+
+340
+00:13:14,030 --> 00:13:17,450
+they also have some problems as well
+
+341
+00:13:15,950 --> 00:13:19,040
+earlier you were dealing with one
+
+342
+00:13:17,450 --> 00:13:20,750
+application now if you're dealing with
+
+343
+00:13:19,040 --> 00:13:22,070
+tens or maybe hundreds of mini
+
+344
+00:13:20,750 --> 00:13:24,260
+applications in the form of micro
+
+345
+00:13:22,070 --> 00:13:26,870
+services so you need to make sure you're
+
+346
+00:13:24,260 --> 00:13:28,610
+not making things worse in general okay
+
+347
+00:13:26,870 --> 00:13:30,950
+so you're separating application into
+
+348
+00:13:28,610 --> 00:13:33,050
+micro services what does this separation
+
+349
+00:13:30,950 --> 00:13:35,270
+look like how do you ideally split your
+
+350
+00:13:33,050 --> 00:13:37,130
+application up into micro services so
+
+351
+00:13:35,270 --> 00:13:39,230
+for example for every feature you need
+
+352
+00:13:37,130 --> 00:13:40,850
+to add to your application if you need
+
+353
+00:13:39,230 --> 00:13:42,350
+to make changes to ten different micro
+
+354
+00:13:40,850 --> 00:13:44,210
+services it kind of defeats the purpose
+
+355
+00:13:42,350 --> 00:13:46,400
+so you need to separate these
+
+356
+00:13:44,210 --> 00:13:48,200
+applications well then there's a problem
+
+357
+00:13:46,400 --> 00:13:50,060
+of how to make sure your micro services
+
+358
+00:13:48,200 --> 00:13:52,190
+discover each other on a single machine
+
+359
+00:13:50,060 --> 00:13:53,690
+on a monolith it's fairly obvious HUF
+
+360
+00:13:52,190 --> 00:13:55,580
+services call each other
+
+361
+00:13:53,690 --> 00:13:57,950
+but with microservices how do the
+
+362
+00:13:55,580 --> 00:14:00,620
+services know which REST API endpoints
+
+363
+00:13:57,950 --> 00:14:02,750
+to call in which environment do you hard
+
+364
+00:14:00,620 --> 00:14:05,090
+code these URLs or do you have a process
+
+365
+00:14:02,750 --> 00:14:06,530
+around service discovery so there are a
+
+366
+00:14:05,090 --> 00:14:08,330
+whole lot of questions here that needs
+
+367
+00:14:06,530 --> 00:14:09,890
+to be answered and this in a nutshell is
+
+368
+00:14:08,330 --> 00:14:13,010
+the whole thing about micro service
+
+369
+00:14:09,890 --> 00:14:15,200
+architecture answering and solving for
+
+370
+00:14:13,010 --> 00:14:16,820
+these problems is exactly what micro
+
+371
+00:14:15,200 --> 00:14:19,130
+service architecture is all about and
+
+372
+00:14:16,820 --> 00:14:21,320
+it's a signs of its own and it it's even
+
+373
+00:14:19,130 --> 00:14:22,940
+an art of its own before we wrap up this
+
+374
+00:14:21,320 --> 00:14:24,890
+video though I should clarify that there
+
+375
+00:14:22,940 --> 00:14:27,470
+isn't a right or a wrong way to do these
+
+376
+00:14:24,890 --> 00:14:29,390
+things in fact not all applications need
+
+377
+00:14:27,470 --> 00:14:31,310
+to be architected as micro services no
+
+378
+00:14:29,390 --> 00:14:33,380
+matter how buzzworthy the term is right
+
+379
+00:14:31,310 --> 00:14:34,910
+now there are many applications that
+
+380
+00:14:33,380 --> 00:14:36,470
+should be built with monolithic
+
+381
+00:14:34,910 --> 00:14:38,540
+architectures please don't believe that
+
+382
+00:14:36,470 --> 00:14:40,610
+micro services are somehow better than
+
+383
+00:14:38,540 --> 00:14:42,770
+one of the tech applications they're
+
+384
+00:14:40,610 --> 00:14:45,650
+just different and both approaches have
+
+385
+00:14:42,770 --> 00:14:47,690
+their own pros and cons I hope this
+
+386
+00:14:45,650 --> 00:14:49,820
+video gave you some ideas about micro
+
+387
+00:14:47,690 --> 00:14:51,740
+services why they were introduced by
+
+388
+00:14:49,820 --> 00:14:54,020
+they're so popular and what they're
+
+389
+00:14:51,740 --> 00:14:56,350
+actually all about thank you for
+
+390
+00:14:54,020 --> 00:14:56,350
+watching
